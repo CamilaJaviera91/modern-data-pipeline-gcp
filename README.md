@@ -17,3 +17,15 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 - Modular structure: `extract`, `transform`, `load`, `validate`, `notify`
 - Uses **Docker + Docker Compose** for local orchestration
 - Ready for deployment on **GCP Cloud Composer** or similar environments
+
+---
+
+## 🛠️ Tech Stack
+
+- **Airflow** – DAG orchestration and scheduling
+- **DBT** – SQL-based transformations
+- **Google Cloud** – BigQuery, Google Sheets API, Secret Manager
+- **Docker** – Containerized development
+- **Python** – Task logic and API integrations
+- **PostgreSQL** – Source database
+- **CI/CD** – GitHub Actions (coming soon)
