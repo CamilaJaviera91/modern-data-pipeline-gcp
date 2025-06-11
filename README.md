@@ -32,6 +32,29 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ---
 
+## 🚀 Getting Started
+
+#### ✅ Prerequisites
+
+- Docker & Docker Compose
+- Python 3.9+
+- `make` (optional, for using the Makefile)
+
+---
+
+#### ⚙️ Local Setup
+
+```
+# Clone the repository
+git clone https://github.com/CamilaJaviera91/modern-data-pipeline-gcp.git
+cd modern-data-pipeline-gcp
+
+# Create `.env` file with required variables
+cp .env.example .env
+```
+
+---
+
 ## 👩‍💻 Author
 
 **Camila Javiera Muñoz Navarro**  
