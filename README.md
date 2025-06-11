@@ -29,3 +29,15 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 - **Python** – Task logic and API integrations
 - **PostgreSQL** – Source database
 - **CI/CD** – GitHub Actions (coming soon)
+
+---
+
+## 👩‍💻 Author
+
+**Camila Javiera Muñoz Navarro**  
+Data Engineer & Analyst | BigQuery | Airflow | Python | GCP  
+[GitHub](https://github.com/CamilaJaviera91) | [LinkedIn](https://www.linkedin.com/in/camilajavieramn/) | [Portfolio](https://camilajaviera91.github.io/camila-portfolio/)
+
+---
+
+> ⭐ If you find this project useful, give it a ⭐️ and share your feedback or ideas in [Issues](https://github.com/CamilaJaviera91/modern-data-pipeline-gcp/issues)!
