@@ -53,6 +53,32 @@ cd modern-data-pipeline-gcp
 cp .env.example .env
 ```
 
+#### 🧭 Step-by-step guide to create a virtual environment in VS Code
+
+1. Open the command palette
+Press `Ctrl + Shift + P` to open the command palette.
+
+2. Select the Python interpreter
+Type and select **"Python: Select Interpreter"**.
+
+3. Create a virtual environment
+
+    - Click on "+ Create Virtual Environment..."
+
+    - Choose the environment type: select "Venv"
+
+    - Select the Python version you want to use (e.g., Python 3.10.17)
+
+4. Wait for the virtual environment to be created
+VS Code will automatically create a `.venv` folder in your project and configure the environment.
+
+5. Activate the virtual environment
+Once it's created, we can activate it.
+
+```
+source .venv/bin/activate
+```
+
 ---
 
 ## 👩‍💻 Author
