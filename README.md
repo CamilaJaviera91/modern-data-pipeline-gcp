@@ -9,7 +9,7 @@ A production-grade, modular ETL pipeline built with **Apache Airflow**, integrat
 This repository contains an end-to-end ETL workflow designed for scalability, maintainability, and cloud readiness. It showcases how to orchestrate data pipelines using Airflow, enrich and transform data with DBT, and deploy the solution using containerized environments and CI/CD pipelines.
 
 ### 🔄 Pipeline Highlights:
-- [] Extracts data from a **PostgreSQL** source
+- [X] Extracts data from a **PostgreSQL** source
 - [] Enriches it with **exchange rate data** from an external API
 - [] Loads the results to **CSV files** and **Google Sheets**
 - [] Optionally pushes transformed data to **BigQuery**
