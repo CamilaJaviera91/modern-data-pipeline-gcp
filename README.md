@@ -81,6 +81,15 @@ source .venv/bin/activate
 
 ---
 
+## ✅ Testing
+
+- **DBT tests** for schema, uniqueness, and relationships
+- **Airflow DAG validation**: `airflow dags list`, `airflow dags test`
+- **Unit tests** for custom Python functions in `/scripts` or `/dags`
+- **CI pipeline** (planned): Linting, formatting, DAG validation, DBT compile
+
+---
+
 ## 👩‍💻 Author
 
 **Camila Javiera Muñoz Navarro**  
