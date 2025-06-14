@@ -90,7 +90,7 @@ source .venv/bin/activate
 
 ---
 
-### 📡 Monitoring & Logging
+## 📡 Monitoring & Logging
 
 - Airflow task logs viewable via the web UI
 - Custom loggers for API responses and ETL steps
