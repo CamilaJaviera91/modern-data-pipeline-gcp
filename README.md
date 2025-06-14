@@ -98,6 +98,15 @@ source .venv/bin/activate
 
 ---
 
+## 🗺️ Roadmap
+
+- [ ] Add unit tests for transformation logic
+- [ ] Set up CI/CD with GitHub Actions
+- [ ] Auto-deploy to Cloud Composer
+- [ ] Add support for other destinations (e.g., Snowflake, S3)
+
+---
+
 ## 👩‍💻 Author
 
 **Camila Javiera Muñoz Navarro**  
