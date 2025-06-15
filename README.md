@@ -48,6 +48,8 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 - 🐘 **PostgreSQL** – Source database
 
+    > PostgreSQL is the primary data source for the pipeline. Python scripts connect via SQLAlchemy or psycopg2 to extract records, which are then cleaned and loaded into BigQuery or other destinations.
+
 - 🤖 **CI/CD** – GitHub Actions automation
 
 ---
