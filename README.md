@@ -34,7 +34,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 - 🐘 **PostgreSQL** – Source database
 
-- 🤖 **CI/CD** – GitHub Actions automation (coming soon)
+- 🤖 **CI/CD** – GitHub Actions automation
 
 ---
 
