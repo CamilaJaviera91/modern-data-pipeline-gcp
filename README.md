@@ -24,6 +24,8 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 - 🌀 **Airflow** – DAG orchestration & scheduling
 
+    - > Apache Airflow is used to define, schedule, and monitor workflows as Directed Acyclic Graphs (DAGs). Each task (e.g., extract, transform, load) runs in sequence or parallel depending on dependencies. In your pipeline, it can automate running Python scripts for ingestion, transformation, and loading at specific intervals (e.g., daily at 1am).
+
 - 🧱 **DBT** – SQL transformations inside BigQuery
 
 - ☁️ **GCP** – BigQuery 📈, Sheets API 📄, Secret Manager 🔐
