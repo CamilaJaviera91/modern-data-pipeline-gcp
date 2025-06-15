@@ -43,6 +43,8 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
     > Docker ensures consistent, reproducible environments for running your pipeline—locally or in the cloud. It packages dependencies, Python versions, and configuration into a container image, avoiding "works on my machine" issues.
 
 - 🐍 **Python** – Core logic, APIs, transformations
+    
+    > Python powers the core business logic of the pipeline—API ingestion, data transformation (Pandas or PySpark), error handling, logging, and exporting results. It's also used for integrating with GCP, PostgreSQL, and 3rd-party APIs.
 
 - 🐘 **PostgreSQL** – Source database
 
