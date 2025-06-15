@@ -27,6 +27,8 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
     - > Apache Airflow is used to define, schedule, and monitor workflows as Directed Acyclic Graphs (DAGs). Each task (e.g., extract, transform, load) runs in sequence or parallel depending on dependencies. In your pipeline, it can automate running Python scripts for ingestion, transformation, and loading at specific intervals (e.g., daily at 1am).
 
 - 🧱 **DBT** – SQL transformations inside BigQuery
+    
+    - > DBT (Data Build Tool) enables modular, version-controlled data transformations using SQL. It runs inside your warehouse (e.g., BigQuery), letting you build models with dependencies, test logic, and document results. Ideal for transforming raw data into analytics-ready datasets in BigQuery.
 
 - ☁️ **GCP** – BigQuery 📈, Sheets API 📄, Secret Manager 🔐
 
