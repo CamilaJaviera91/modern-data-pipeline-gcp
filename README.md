@@ -32,6 +32,12 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 - ☁️ **GCP** – BigQuery 📈, Sheets API 📄, Secret Manager 🔐
 
+    - >BigQuery: Serverless data warehouse for fast querying and analytics.
+
+    - >Google Sheets API: Used to export or update transformed data directly into shared spreadsheets for reporting or stakeholder access.
+
+    - > Secret Manager: Securely stores credentials and API keys (e.g., DB passwords, service account tokens) for safe access from scripts or containers.
+
 - 🐳 **Docker** – Containerized development environments
 
 - 🐍 **Python** – Core logic, APIs, transformations
