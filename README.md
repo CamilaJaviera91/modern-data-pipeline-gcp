@@ -22,13 +22,19 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ## 🛠️ Tech Stack
 
-- **Airflow** – DAG orchestration and scheduling
-- **DBT** – SQL-based transformations
-- **Google Cloud** – BigQuery, Google Sheets API, Secret Manager
-- **Docker** – Containerized development
-- **Python** – Task logic and API integrations
-- **PostgreSQL** – Source database
-- **CI/CD** – GitHub Actions (coming soon)
+- 🌀 Airflow – DAG orchestration & scheduling
+
+- 🧱 DBT – SQL transformations inside BigQuery
+
+- ☁️ GCP – BigQuery 📈, Sheets API 📄, Secret Manager 🔐
+
+- 🐳 Docker – Containerized development environments
+
+- 🐍 Python – Core logic, APIs, transformations
+
+- 🐘 PostgreSQL – Source database
+
+- 🤖 CI/CD – GitHub Actions automation (coming soon)
 
 ---
 
