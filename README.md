@@ -52,6 +52,8 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 - 🤖 **CI/CD** – GitHub Actions automation
 
+    > GitHub Actions will enable automated workflows for testing, linting, building, and deploying pipeline components on every code change. You can set up jobs to run Pytest, build Docker images, deploy Airflow DAGs, or validate DBT models on push or pull requests.
+
 ---
 
 ## 🚀 Getting Started
