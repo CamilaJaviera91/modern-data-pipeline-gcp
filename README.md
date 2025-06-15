@@ -24,21 +24,23 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 - 🌀 **Airflow** – DAG orchestration & scheduling
 
-    - > Apache Airflow is used to define, schedule, and monitor workflows as Directed Acyclic Graphs (DAGs). Each task (e.g., extract, transform, load) runs in sequence or parallel depending on dependencies. In your pipeline, it can automate running Python scripts for ingestion, transformation, and loading at specific intervals (e.g., daily at 1am).
+    > Apache Airflow is used to define, schedule, and monitor workflows as Directed Acyclic Graphs (DAGs). Each task (e.g., extract, transform, load) runs in sequence or parallel depending on dependencies. In your pipeline, it can automate running Python scripts for ingestion, transformation, and loading at specific intervals (e.g., daily at 1am).
 
 - 🧱 **DBT** – SQL transformations inside BigQuery
     
-    - > DBT (Data Build Tool) enables modular, version-controlled data transformations using SQL. It runs inside your warehouse (e.g., BigQuery), letting you build models with dependencies, test logic, and document results. Ideal for transforming raw data into analytics-ready datasets in BigQuery.
+    > DBT (Data Build Tool) enables modular, version-controlled data transformations using SQL. It runs inside your warehouse (e.g., BigQuery), letting you build models with dependencies, test logic, and document results. Ideal for transforming raw data into analytics-ready datasets in BigQuery.
 
 - ☁️ **GCP** – BigQuery 📈, Sheets API 📄, Secret Manager 🔐
 
-    - >BigQuery: Serverless data warehouse for fast querying and analytics.
+    > BigQuery: Serverless data warehouse for fast querying and analytics.
 
-    - >Google Sheets API: Used to export or update transformed data directly into shared spreadsheets for reporting or stakeholder access.
+    > Google Sheets API: Used to export or update transformed data directly into shared spreadsheets for reporting or stakeholder access.
 
-    - > Secret Manager: Securely stores credentials and API keys (e.g., DB passwords, service account tokens) for safe access from scripts or containers.
+    > Secret Manager: Securely stores credentials and API keys (e.g., DB passwords, service account tokens) for safe access from scripts or containers.
 
 - 🐳 **Docker** – Containerized development environments
+
+    > Docker ensures consistent, reproducible environments for running your pipeline—locally or in the cloud. It packages dependencies, Python versions, and configuration into a container image, avoiding "works on my machine" issues.
 
 - 🐍 **Python** – Core logic, APIs, transformations
 
