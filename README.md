@@ -93,9 +93,6 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 # Clone the repository
 git clone https://github.com/CamilaJaviera91/modern-data-pipeline-gcp.git
 cd modern-data-pipeline-gcp
-
-# Create `.env` file with required variables
-cp .env.example .env
 ```
 
 #### 🧭 Step-by-step guide to create a virtual environment in VS Code
