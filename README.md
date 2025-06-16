@@ -14,6 +14,7 @@
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🗺️ Roadmap](#️-roadmap)
 - [🤝 Contributing](#-contributing)
+- [👩‍💻 Author](#-author)
 
 ## 🔍 Description
 
