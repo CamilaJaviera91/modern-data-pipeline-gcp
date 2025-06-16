@@ -10,6 +10,7 @@
     - [✅ Prerequisites](#-prerequisites)
     - [⚙️ Local Setup](#️-local-setup)
     - [🧭 Step-by-step guide to create a virtual environment in VS Code](#-step-by-step-guide-to-create-a-virtual-environment-in-vs-code)
+    - [⚙️ Install Requirements ](#️-install-requirements)
 - [✅ Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🗺️ Roadmap](#️-roadmap)
@@ -121,6 +122,10 @@ Once it's created, we can activate it.
 source .venv/bin/activate
 ```
 
+#### ⚙️ Install Requirements 
+```
+pip install -r requirements.txt
+```
 ---
 
 ## ✅ Testing
