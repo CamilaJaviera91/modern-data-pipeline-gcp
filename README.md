@@ -7,6 +7,7 @@
     - [🔄 Pipeline Highlights](#-pipeline-highlights)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Getting Started](#-getting-started)
+    - [✅ Prerequisites](#-prerequisites)
 
 ## 🔍 Description
 
