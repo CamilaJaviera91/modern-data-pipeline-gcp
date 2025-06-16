@@ -13,6 +13,7 @@
 - [✅ Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🗺️ Roadmap](#️-roadmap)
+- [🤝 Contributing](#-contributing)
 
 ## 🔍 Description
 
