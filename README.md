@@ -6,14 +6,6 @@
 - [🚀 Project Overview](#-overview)
     - [🔄 Pipeline Highlights](#-pipeline-highlights)
 - [🧰 Tech Stack](#️-tech-stack)
-- [⚙️ Setup and Installation](#-setup-and-installation)
-- [🚀 How to Run](#-how-to-run)
-- [🧪 Testing and CI/CD](#-testing-and-cicd)
-- [📊 Example Output](#-example-output)
-- [🧠 Best Practices](#-best-practices)
-- [🔭 Future Improvements](#-future-improvements)
-- [📎 Resources and References](#-resources-and-references)
-- [📬 Contact](#-contact)
 
 ## 🔍 Description
 
