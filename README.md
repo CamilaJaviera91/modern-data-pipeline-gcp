@@ -9,6 +9,7 @@
 - [🚀 Getting Started](#-getting-started)
     - [✅ Prerequisites](#-prerequisites)
     - [⚙️ Local Setup](#️-local-setup)
+    - [🧭 Step-by-step guide to create a virtual environment in VS Code](#-step-by-step-guide-to-create-a-virtual-environment-in-vs-code)
 
 ## 🔍 Description
 
