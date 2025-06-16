@@ -4,6 +4,7 @@
 
 - [🔍 Description](#-description)
 - [🚀 Project Overview](#-overview)
+    - [🔄 Pipeline Highlights](#-pipeline-highlights)
 - [📐 Architecture Diagram](#-architecture-diagram)
 - [🧰 Tech Stack](#-tech-stack)
 - [⚙️ Setup and Installation](#-setup-and-installation)
