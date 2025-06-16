@@ -12,6 +12,7 @@
     - [🧭 Step-by-step guide to create a virtual environment in VS Code](#-step-by-step-guide-to-create-a-virtual-environment-in-vs-code)
 - [✅ Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
+- [🗺️ Roadmap](#️-roadmap)
 
 ## 🔍 Description
 
