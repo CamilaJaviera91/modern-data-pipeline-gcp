@@ -83,6 +83,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 - Docker & Docker Compose
 - Python 3.9+
 - `make` (optional, for using the Makefile)
+- GCP account, permissions, CLI tools, credentials.
 
 ---
 
