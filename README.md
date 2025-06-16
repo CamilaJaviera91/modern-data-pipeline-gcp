@@ -8,6 +8,7 @@
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Getting Started](#-getting-started)
     - [✅ Prerequisites](#-prerequisites)
+    - [⚙️ Local Setup](#️-local-setup)
 
 ## 🔍 Description
 
