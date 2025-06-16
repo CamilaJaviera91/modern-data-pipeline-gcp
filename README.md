@@ -5,7 +5,8 @@
 - [🔍 Description](#-description)
 - [🚀 Project Overview](#-overview)
     - [🔄 Pipeline Highlights](#-pipeline-highlights)
-- [🧰 Tech Stack](#️-tech-stack)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🚀 Getting Started](#-getting-started)
 
 ## 🔍 Description
 
