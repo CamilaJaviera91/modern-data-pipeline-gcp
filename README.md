@@ -1,10 +1,27 @@
 # 🌐 Modern Data Pipeline GCP
 
+## 📚 Table of Contents
+
+- [🔍 Description](#-description)
+- [🚀 Project Overview](#-overview)
+- [📐 Architecture Diagram](#-architecture-diagram)
+- [🧰 Tech Stack](#-tech-stack)
+- [⚙️ Setup and Installation](#-setup-and-installation)
+- [🚀 How to Run](#-how-to-run)
+- [🧪 Testing and CI/CD](#-testing-and-cicd)
+- [📊 Example Output](#-example-output)
+- [🧠 Best Practices](#-best-practices)
+- [🔭 Future Improvements](#-future-improvements)
+- [📎 Resources and References](#-resources-and-references)
+- [📬 Contact](#-contact)
+
+## 🔍 Description
+
 A production-grade, modular ETL pipeline built with **Apache Airflow**, integrated with **Google Cloud Platform (GCP)** services and **DBT** for transformation and modeling. This project demonstrates best practices in orchestration, cloud-native development, CI/CD, data quality, and monitoring — all in a real-world data pipeline context.
 
 ---
 
-## 🚀 Overview
+## 🚀 Project Overview
 
 This repository contains an end-to-end ETL workflow designed for scalability, maintainability, and cloud readiness. It showcases how to orchestrate data pipelines using Airflow, enrich and transform data with DBT, and deploy the solution using containerized environments and CI/CD pipelines.
 
