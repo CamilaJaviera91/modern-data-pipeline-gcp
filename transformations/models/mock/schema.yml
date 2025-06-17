@@ -24,3 +24,32 @@ models:
         tests:
           - accepted_values:
               values: ['active', 'inactive']
+              
+  - name: mock_orders
+    description: "Mock table of orders assigned to random users"
+    columns:
+      - name: order_id
+        description: "Unique identifier for the order"
+        tests:
+          - not_null
+          - unique
+
+      - name: user_id
+        description: "Foreign key referencing mock_users.user_id"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('mock_users')
+              field: user_id
+
+      - name: order_date
+        description: "Randomly generated date of the order"
+
+      - name: amount
+        description: "Random purchase amount"
+
+      - name: status
+        description: "Order status (cancelled, shipped, or processing)"
+        tests:
+          - accepted_values:
+              values: ['cancelled', 'shipped', 'processing']
