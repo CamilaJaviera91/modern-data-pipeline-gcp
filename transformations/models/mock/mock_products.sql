@@ -18,4 +18,4 @@ products AS (
     FROM base
 )
 
-SELECT * FROM products;
+SELECT * FROM products

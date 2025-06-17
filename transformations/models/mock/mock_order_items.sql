@@ -26,4 +26,4 @@ order_items AS (
     LEFT JOIN product_ids p ON b.product_id = p.product_id
 )
 
-SELECT * FROM order_items;
+SELECT * FROM order_items
