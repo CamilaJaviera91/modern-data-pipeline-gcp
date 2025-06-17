@@ -122,7 +122,7 @@ Once it's created, we can activate it.
 source .venv/bin/activate
 ```
 
-#### ⚙️ Install Requirements 
+#### 📦 Install Requirements
 
 ```
 pip install -r requirements.txt
