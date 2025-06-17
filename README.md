@@ -145,7 +145,7 @@ dbt init transformations
 
 ---
 
-## ✅ Testing
+## 🧪 Testing
 
 - **DBT tests** for schema, uniqueness, and relationships
 - **Airflow DAG validation**: `airflow dags list`, `airflow dags test`
