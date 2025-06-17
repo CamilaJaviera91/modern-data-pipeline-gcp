@@ -123,9 +123,26 @@ source .venv/bin/activate
 ```
 
 #### ⚙️ Install Requirements 
+
 ```
 pip install -r requirements.txt
 ```
+
+#### 🆕 Initialize Project
+
+```
+dbt init transformations
+```
+
+- DBT will ask you a few questions:
+
+    - project name: (you can keep transformations)
+
+    - profile: use the default one, or configure it later
+
+- This will create a transformations/ folder with all the base files.
+
+
 ---
 
 ## ✅ Testing
