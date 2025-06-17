@@ -1,21 +1,21 @@
 -- models/mock/mock_products.sql
 
-with products as (
-    select
-        generate_series(1, 100) as product_id,
-        -- Nombre del producto: Producto + número
-        concat('Product ', generate_series(1, 100)) as product_name,
-        -- Categorías mock
-        case
-            when random() < 0.3 then 'Electronics'
-            when random() < 0.6 then 'Clothing'
-            else 'Home & Garden'
-        end as category,
-        -- Precio entre 5 y 1000 con 2 decimales
-        round((random() * 995 + 5)::numeric, 2) as price,
-        -- Stock entre 0 y 100 unidades
-        floor(random() * 101)::int as stock,
-        -- Fecha aleatoria de creación en últimos 2 años
-        (current_date - (random() * 730)::int) as created_at
+{{ config(materialized='table') }}
+
+WITH base AS (
+    SELECT
+        generate_series(1, 100) AS product_id,
+        md5(random()::text) AS random_text
+),
+products AS (
+    SELECT
+        product_id,
+        INITCAP(SUBSTRING(random_text, 1, 10)) || ' ' || INITCAP(SUBSTRING(random_text, 11, 5)) AS product_name,
+        (ARRAY['Electronics', 'Clothing', 'Home & Garden'])[floor(random() * 3 + 1)::int] AS category,
+        ROUND((random() * 200 + 10)::numeric, 2) AS price,
+        floor(random() * 500 + 1)::int AS stock,
+        CURRENT_DATE - (trunc(random() * 365)::int) AS created_at
+    FROM base
 )
-select * from products
+
+SELECT * FROM products;
