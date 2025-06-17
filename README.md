@@ -128,6 +128,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+#### 🐘 Start Postgres Services:
+
+```
+sudo systemctl start postgresql
+```
+
 #### 🆕 Initialize Project
 
 ```
