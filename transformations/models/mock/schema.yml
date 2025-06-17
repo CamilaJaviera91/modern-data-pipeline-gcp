@@ -1,0 +1,122 @@
+version: 2
+
+models:
+  - name: mock_users
+    description: "Mock table of users generated with random data"
+    columns:
+      - name: user_id
+        description: "Unique identifier for the user"
+        tests:
+          - not_null
+          - unique
+
+      - name: username
+        description: "Generated username"
+
+      - name: email
+        description: "Fake generated email address"
+
+      - name: created_at
+        description: "Randomly generated creation date"
+
+      - name: status
+        description: "User status (active or inactive)"
+        tests:
+          - accepted_values:
+              values: ['active', 'inactive']
+
+  - name: mock_orders
+    description: "Mock table of orders assigned to random users"
+    columns:
+      - name: order_id
+        description: "Unique identifier for the order"
+        tests:
+          - not_null
+          - unique
+
+      - name: user_id
+        description: "Foreign key referencing mock_users.user_id"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('mock_users')
+              field: user_id
+
+      - name: order_date
+        description: "Randomly generated date of the order"
+
+      - name: amount
+        description: "Random purchase amount"
+
+      - name: status
+        description: "Order status (cancelled, shipped, or processing)"
+        tests:
+          - accepted_values:
+              values: ['cancelled', 'shipped', 'processing']
+
+  - name: mock_products
+    description: "Mock table of products with randomly generated data"
+    columns:
+      - name: product_id
+        description: "Unique identifier for the product"
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: "Generated product name"
+
+      - name: category
+        description: "Product category (Electronics, Clothing, or Home & Garden)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Electronics', 'Clothing', 'Home & Garden']
+
+      - name: price
+        description: "Product price with two decimal places"
+        tests:
+          - not_null
+
+      - name: stock
+        description: "Available stock units"
+        tests:
+          - not_null
+
+      - name: created_at
+        description: "Randomly generated creation date"
+
+  - name: mock_order_items
+    description: "Mock table that links orders to products, simulating items in each order"
+    columns:
+      - name: order_item_id
+        description: "Unique identifier for the order item"
+        tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: "Foreign key referencing mock_orders.order_id"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('mock_orders')
+              field: order_id
+
+      - name: product_id
+        description: "Foreign key referencing mock_products.product_id"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('mock_products')
+              field: product_id
+
+      - name: quantity
+        description: "Quantity of the product in the order"
+        tests:
+          - not_null
+
+      - name: item_price
+        description: "Unit price at the time of order"
+        tests:
+          - not_null
