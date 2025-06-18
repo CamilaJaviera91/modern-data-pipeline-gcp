@@ -1,3 +1,11 @@
+{{ config(
+    materialized='table',
+    post_hook=[
+        "ALTER TABLE {{ this }} ADD CONSTRAINT fk_order_items_order_id FOREIGN KEY (order_id) REFERENCES {{ ref('mock_orders') }}(order_id)",
+        "ALTER TABLE {{ this }} ADD CONSTRAINT fk_order_items_product_id FOREIGN KEY (product_id) REFERENCES {{ ref('mock_products') }}(product_id)"
+    ]
+) }}
+
 -- models/mock/mock_order_items.sql
 
 {{ config(materialized='table') }}
