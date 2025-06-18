@@ -1,0 +1,12 @@
+transformations:
+  outputs:
+    dev:
+      dbname:  postgres
+      host:   "{{ env_var('DBT_HOST') }}"
+      pass:   "{{ env_var('DBT_PASSWORD') }}"
+      port:   "{{ env_var('DBT_PORT', '5432') }}"
+      schema: "{{ env_var('DBT_SCHEMA', 'analytics') }}"
+      threads: 1
+      type:    postgres
+      user:   "{{ env_var('DBT_USER') }}"
+  target: dev
