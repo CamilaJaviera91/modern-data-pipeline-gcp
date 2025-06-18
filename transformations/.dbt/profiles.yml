@@ -5,7 +5,7 @@ transformations:
       host:   "{{ env_var('DBT_HOST') }}"
       pass:   "{{ env_var('DBT_PASSWORD') }}"
       port:   "{{ env_var('DBT_PORT', '5432') }}"
-      schema: "{{ env_var('DBT_SCHEMA', 'prueba') }}"
+      schema: "{{ env_var('DBT_SCHEMA', 'public') }}"
       threads: 1
       type:    postgres
       user:   "{{ env_var('DBT_USER') }}"
