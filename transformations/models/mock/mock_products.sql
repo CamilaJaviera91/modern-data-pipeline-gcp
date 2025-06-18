@@ -1,3 +1,10 @@
+{{ config(
+    materialized='table',
+    post_hook=[
+        "ALTER TABLE {{ this }} ADD CONSTRAINT unique_product_id UNIQUE (product_id)"
+    ]
+) }}
+
 -- models/mock/mock_products.sql
 
 {{ config(materialized='table') }}

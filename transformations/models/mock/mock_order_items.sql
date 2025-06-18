@@ -1,6 +1,7 @@
 {{ config(
     materialized='table',
     post_hook=[
+        "ALTER TABLE {{ this }} ADD CONSTRAINT unique_order_item_id UNIQUE (order_item_id)",
         "ALTER TABLE {{ this }} ADD CONSTRAINT fk_order_items_order_id FOREIGN KEY (order_id) REFERENCES {{ ref('mock_orders') }}(order_id)",
         "ALTER TABLE {{ this }} ADD CONSTRAINT fk_order_items_product_id FOREIGN KEY (product_id) REFERENCES {{ ref('mock_products') }}(product_id)"
     ]
