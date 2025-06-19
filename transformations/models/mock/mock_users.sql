@@ -23,4 +23,4 @@ user_data AS (
     FROM base
 )
 
-SELECT * FROM user_data;
+SELECT * FROM user_data
