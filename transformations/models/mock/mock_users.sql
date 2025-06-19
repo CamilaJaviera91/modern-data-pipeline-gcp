@@ -8,14 +8,16 @@
 -- models/mock/mock_users.sql
 
 WITH base AS (
-    SELECT generate_series(1, 1000) AS user_id
+    SELECT 
+    generate_series(1, 1000) AS user_id,
+    (random() * interval '365 days') AS random_date,
 ),
 user_data AS (
     SELECT
         user_id,
         CONCAT('User_', user_id) AS username,
         CONCAT('User_', user_id, '@example.com') AS email,
-        now() - (random() * interval '365 days') AS created_at,
+        now() - random_date AS created_at,
         CASE
             WHEN random() > 0.5 THEN 'active'
             ELSE 'inactive'
