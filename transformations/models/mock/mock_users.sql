@@ -121,8 +121,8 @@ base AS (
     SELECT 
         generate_series(1, 1000) AS user_id,
         (random() * interval '365 days') AS random_date,
-        floor(random() * 10 + 1)::int AS fn_id,
-        floor(random() * 10 + 1)::int AS ln_id,
+        floor(random() * 500 + 1)::int AS fn_id,
+        floor(random() * 500 + 1)::int AS ln_id,
         CASE 
             WHEN random() > 0.5 THEN 'active'
             ELSE 'inactive'
