@@ -11,6 +11,10 @@ WITH base AS (
     SELECT 
     generate_series(1, 1000) AS user_id,
     (random() * interval '365 days') AS random_date,
+    CASE 
+        WHEN random() > 0.5 THEN 'active'
+        ELSE 'inactive'
+    END AS status
 ),
 user_data AS (
     SELECT
@@ -18,10 +22,11 @@ user_data AS (
         CONCAT('User_', user_id) AS username,
         CONCAT('User_', user_id, '@example.com') AS email,
         now() - random_date AS created_at,
+        status,
         CASE
-            WHEN random() > 0.5 THEN 'active'
-            ELSE 'inactive'
-        END AS status
+            WHEN status = 'active' THEN NULL
+            ELSE random_date + now()
+        END AS terminated_at
     FROM base
 )
 
