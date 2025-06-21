@@ -149,6 +149,16 @@ dbt init transformations
 - This will create a transformations/ folder with all the base files.
 
 
+#### 🚀 How to run the mock models
+
+To run the models inside the `mock` directory, use the following command:
+
+```
+./run.sh run --select mock
+```
+
+This command runs DBT and processes only the models located in the `models/mock` folder.
+
 ---
 
 ## 🧪 Testing
