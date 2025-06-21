@@ -33,7 +33,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ### 🔄 Pipeline Highlights:
 - [X] Extracts data from a **PostgreSQL** source
-- [ ] Enriches it with **exchange rate data** from an external API
+- [X] Enriches it with **exchange rate data** from an external API
 - [ ] Loads the results to **CSV files** and **Google Sheets**
 - [ ] Optionally pushes transformed data to **BigQuery**
 - [ ] Includes **data quality checks** and **logging**
