@@ -18,3 +18,5 @@ models:
   transformations:
     mock:
       +materialized: table
+      +schema: mock_schema
+      +pre-hook: "CREATE SCHEMA IF NOT EXISTS mock_schema"
