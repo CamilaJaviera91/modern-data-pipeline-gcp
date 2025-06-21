@@ -2,22 +2,25 @@ import os
 import requests
 import psycopg2
 from datetime import datetime
+from dotenv import load_dotenv
+load_dotenv() 
 
 # Read environment variables
 API_KEY = os.getenv("EXCHANGE_API_KEY")
-DB_HOST = os.getenv("DBT_HOST", "localhost")
-DB_NAME = os.getenv("DBT_DBNAME", "postgres")
-DB_USER = os.getenv("DBT_USER", "postgres")
-DB_PASSWORD = os.getenv("DBT_PASSWORD", "")
-DB_PORT = os.getenv("DBT_PORT", 5432)
+DB_HOST = os.getenv("DBT_HOST")
+DB_NAME = os.getenv("DBT_DBNAME")
+DB_USER = os.getenv("DBT_USER")
+DB_PASSWORD = os.getenv("DBT_PASSWORD")
+DB_PORT = os.getenv("DBT_PORT")
 
 def fetch_exchange_rates():
-    url = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/USD"
+    url = f"https://data.fixer.io/api/latest?access_key={API_KEY}&format=1"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
         return data.get("conversion_rates", {})
     else:
+        print("Response content:", response.text) 
         raise Exception(f"Failed to fetch rates: HTTP {response.status_code}")
 
 def load_rates_to_db(rates):
