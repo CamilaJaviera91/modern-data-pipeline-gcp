@@ -18,3 +18,4 @@ models:
   transformations:
     mock:
       +materialized: table
+      +pre-hook: "CREATE SCHEMA IF NOT EXISTS {{ env_var('DBT_SCHEMA') }}"
