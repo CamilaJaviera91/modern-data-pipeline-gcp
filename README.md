@@ -151,13 +151,13 @@ dbt init transformations
 
 #### 🚀 How to run the mock models
 
-To run the models inside the `mock` directory, use the following command:
+- To run the models inside the `mock` directory, use the following command:
 
 ```
 ./run.sh run --select mock
 ```
 
-This command runs DBT and processes only the models located in the `models/mock` folder.
+- This command runs DBT and processes only the models located in the `models/mock` folder.
 
 ---
 
