@@ -169,7 +169,7 @@ dbt init transformations
 
 ```
 python transformations/scripts/load_exchange_rates.py      # 🔌 loads exchange rates
-./run.sh run --select enrich_exchange_rates               # 🛠️ transforms data
+./run.sh run --select enrich_exchange_rates                # 🛠️ transforms data
 ```
 
 - This command runs DBT and processes only the models located in the `models/mock` folder.
