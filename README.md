@@ -168,7 +168,8 @@ dbt init transformations
 - To run the models inside the `mock` directory, use the following command:
 
 ```
-./run.sh run --select mock
+python transformations/scripts/load_exchange_rates.py      # 🔌 loads exchange rates
+./run.sh run --select enrich_exchange_rates               # 🛠️ transforms data
 ```
 
 - This command runs DBT and processes only the models located in the `models/mock` folder.
