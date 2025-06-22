@@ -1,25 +1,6 @@
-# requirements.txt
-
-# ETL and orchestration
-#apache-airflow==2.9.1
-
-# Data transformation (DBT connectors)
 dbt-bigquery==1.7.9
-dbt-postgres==1.7.9
-
-# Mock data
-faker==24.9.0
-pandas==2.2.2
-
-# Testing
-pytest==8.2.1
-pytest-mock==3.14.0
-
-# Linting and formatting
-black==24.4.2
-flake8==7.0.0
-isort==5.13.2
-
 dbt-postgres==1.7.9
 psycopg2-binary>=2.9
 python-dotenv==1.1.0
+faker==24.9.0
+pandas==2.2.2
