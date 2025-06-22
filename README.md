@@ -17,6 +17,8 @@
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🗺️ Roadmap](#️-roadmap)
 - [🤝 Contributing](#-contributing)
+- [🧰 Resources](#-resources)
+    - [🧱 DBT](#-dbt)
 - [👩‍💻 Author](#-author)
 
 ---
