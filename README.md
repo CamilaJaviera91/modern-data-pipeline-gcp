@@ -81,7 +81,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 #### ✅ Prerequisites
 
@@ -93,6 +93,8 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 ---
 
 #### ⚙️ Local Setup
+
+- Clone the repo
 
 ```
 # Clone the repository
@@ -125,6 +127,15 @@ Once it's created, we can activate it.
 ```
 source .venv/bin/activate
 ```
+
+- (Opcional) If you don't want to create the enviroment in VSCode you can use this script:
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
 
 #### 📦 Install Requirements
 
