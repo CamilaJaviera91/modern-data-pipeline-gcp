@@ -206,6 +206,18 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
+## 🧰 Resources:
+
+### 🧱 DBT
+
+- [DBT Docs](https://docs.getdbt.com/docs/introduction)
+- [DBT QA](https://discourse.getdbt.com/)
+- [DBT Chat](https://community.getdbt.com/)
+- [DBT Events](https://events.getdbt.com)
+- [DBT blog](https://blog.getdbt.com/) 
+
+---
+
 ## 👩‍💻 Author
 
 **Camila Javiera Muñoz Navarro**  
