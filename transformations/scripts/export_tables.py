@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Load DB credentials
+# Load DB credentials from environment variables
 conn = psycopg2.connect(
     host=os.getenv("DBT_HOST"),
     dbname=os.getenv("DBT_DBNAME"),
@@ -14,26 +14,28 @@ conn = psycopg2.connect(
     port=os.getenv("DBT_PORT")
 )
 
-schema=os.getenv("DBT_SCHEMA")
+schema = os.getenv("DBT_SCHEMA")
 
-# Load data from the final DBT table
-query = f"""
-SELECT 
-    user_id, 
-    concat(first_name, ' ', last_name) as name, 
-    email, 
-    date(created_at) as created_date,
-    date(terminated_at) as termitation_date,
-    status
-FROM {schema}.mock_users
-"""
-df = pd.read_sql(query, conn)
+# Create 'data' folder if it doesn't exist
+os.makedirs("data", exist_ok=True)
+
+# Get the list of tables in the schema
+with conn.cursor() as cur:
+    cur.execute("""
+        SELECT table_name 
+        FROM information_schema.tables
+        WHERE table_schema = %s AND table_type = 'BASE TABLE'
+    """, (schema,))
+    tables = cur.fetchall()
+
+# Export each table to a CSV file
+for (table_name,) in tables:
+    print(f"Exporting table {table_name}...")
+    query = f"SELECT * FROM {schema}.{table_name}"
+    df = pd.read_sql(query, conn)
+    csv_path = f"data/{table_name}.csv"
+    df.to_csv(csv_path, index=False)
+    print(f"Saved {csv_path}")
+
 conn.close()
-
-# crete folder 'data' if it not exists
-os.makedirs("data", exist_ok=True)  
-df.to_csv("data/final_report.csv", index=False)
-
-# ✅ Export to CSV
-df.to_csv("data/final_report.csv", index=False)
-print("✅ CSV export done")
+print("✅ Export of all tables completed.")
