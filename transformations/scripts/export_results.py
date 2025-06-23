@@ -17,7 +17,16 @@ conn = psycopg2.connect(
 schema=os.getenv("DBT_SCHEMA")
 
 # Load data from the final DBT table
-query = f"SELECT * FROM {schema}.mock_users"
+query = f"""
+SELECT 
+    user_id, 
+    concat(first_name, ' ', last_name) as name, 
+    email, 
+    date(created_at) as created_date,
+    date(terminated_at) as termitation_date,
+    status
+FROM {schema}.mock_users
+"""
 df = pd.read_sql(query, conn)
 conn.close()
 
