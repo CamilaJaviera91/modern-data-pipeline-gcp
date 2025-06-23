@@ -21,6 +21,10 @@ query = f"SELECT * FROM {schema}.mock_users"
 df = pd.read_sql(query, conn)
 conn.close()
 
+# crete folder 'data' if it not exists
+os.makedirs("data", exist_ok=True)  
+df.to_csv("data/final_report.csv", index=False)
+
 # ✅ Export to CSV
 df.to_csv("data/final_report.csv", index=False)
 print("✅ CSV export done")
