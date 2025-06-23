@@ -1,0 +1,1001 @@
+product_id,product_name,category,price,stock,created_at
+1,product_1,Home & Garden,132.79,165,2024-10-12
+2,product_2,Electronics,133.53,107,2024-08-07
+3,product_3,Clothing,30.91,351,2024-11-23
+4,product_4,Electronics,75.42,209,2025-04-03
+5,product_5,Electronics,160.82,157,2025-04-09
+6,product_6,Home & Garden,194.81,304,2025-05-30
+7,product_7,Electronics,163.85,381,2025-03-04
+8,product_8,Home & Garden,74.5,479,2025-05-31
+9,product_9,Clothing,134.57,23,2025-04-18
+10,product_10,Electronics,36.66,234,2025-04-09
+11,product_11,Clothing,90.52,453,2025-04-21
+12,product_12,Clothing,24.75,494,2024-11-22
+13,product_13,Home & Garden,130.64,79,2024-10-18
+14,product_14,Electronics,89.14,286,2024-12-08
+15,product_15,Clothing,84.5,348,2024-12-31
+16,product_16,Clothing,18.85,427,2024-11-07
+17,product_17,Electronics,124.31,10,2025-05-11
+18,product_18,Clothing,117.41,100,2024-06-24
+19,product_19,Home & Garden,20.43,491,2024-10-02
+20,product_20,Home & Garden,143.17,224,2024-11-14
+21,product_21,Electronics,80.74,316,2025-02-22
+22,product_22,Home & Garden,54.6,25,2024-12-10
+23,product_23,Home & Garden,142.28,359,2025-02-10
+24,product_24,Electronics,51.37,299,2024-08-30
+25,product_25,Home & Garden,110.52,341,2024-09-21
+26,product_26,Electronics,161.45,423,2024-11-03
+27,product_27,Home & Garden,104.88,132,2024-11-21
+28,product_28,Home & Garden,62.58,435,2025-04-05
+29,product_29,Home & Garden,190.77,2,2024-10-13
+30,product_30,Electronics,53.99,37,2025-01-28
+31,product_31,Home & Garden,194.83,386,2024-10-22
+32,product_32,Home & Garden,13.56,78,2025-01-28
+33,product_33,Clothing,112.17,156,2025-05-29
+34,product_34,Clothing,16.74,208,2025-06-05
+35,product_35,Home & Garden,85.7,434,2025-01-25
+36,product_36,Electronics,47.76,328,2024-06-28
+37,product_37,Home & Garden,196.06,433,2024-06-30
+38,product_38,Home & Garden,146.72,243,2025-03-17
+39,product_39,Clothing,119.25,299,2025-01-01
+40,product_40,Electronics,42.66,84,2025-06-10
+41,product_41,Home & Garden,174.87,374,2025-02-25
+42,product_42,Electronics,113.95,141,2025-01-24
+43,product_43,Home & Garden,184.31,227,2024-07-26
+44,product_44,Home & Garden,171.35,368,2025-06-18
+45,product_45,Clothing,99.63,360,2025-01-19
+46,product_46,Clothing,163.82,336,2024-08-15
+47,product_47,Electronics,108.52,146,2025-05-16
+48,product_48,Home & Garden,75.44,177,2024-07-30
+49,product_49,Electronics,122.31,419,2025-04-07
+50,product_50,Home & Garden,99.66,98,2024-10-22
+51,product_51,Home & Garden,153.87,311,2025-04-23
+52,product_52,Electronics,155.58,395,2025-01-12
+53,product_53,Clothing,188.72,168,2025-03-07
+54,product_54,Clothing,153.18,162,2024-11-06
+55,product_55,Home & Garden,146.65,12,2024-08-05
+56,product_56,Home & Garden,30.31,42,2024-09-23
+57,product_57,Clothing,166.41,433,2024-06-23
+58,product_58,Electronics,177.25,42,2024-10-05
+59,product_59,Clothing,93.06,371,2024-09-09
+60,product_60,Clothing,11.94,381,2024-12-02
+61,product_61,Home & Garden,79.23,8,2025-05-15
+62,product_62,Clothing,149.03,129,2025-06-05
+63,product_63,Home & Garden,33.04,302,2025-02-26
+64,product_64,Electronics,155.94,163,2024-06-26
+65,product_65,Electronics,40.4,465,2025-04-24
+66,product_66,Clothing,62.6,465,2025-01-15
+67,product_67,Clothing,121.49,445,2025-03-22
+68,product_68,Home & Garden,66.91,274,2025-06-04
+69,product_69,Clothing,197.61,449,2024-09-19
+70,product_70,Clothing,57.62,217,2024-07-04
+71,product_71,Clothing,11.54,389,2024-08-10
+72,product_72,Home & Garden,118.61,51,2024-08-07
+73,product_73,Home & Garden,120.58,283,2024-08-18
+74,product_74,Clothing,66.41,88,2025-02-20
+75,product_75,Clothing,171.73,417,2025-03-24
+76,product_76,Electronics,119.31,318,2025-02-14
+77,product_77,Clothing,176.37,267,2024-08-28
+78,product_78,Clothing,22.71,116,2024-07-08
+79,product_79,Home & Garden,146.23,132,2025-02-16
+80,product_80,Clothing,31.75,274,2025-01-26
+81,product_81,Electronics,139.5,376,2025-05-09
+82,product_82,Electronics,119.8,479,2024-08-08
+83,product_83,Home & Garden,109.84,1,2025-04-01
+84,product_84,Electronics,157.05,148,2024-09-02
+85,product_85,Clothing,197.15,175,2024-11-11
+86,product_86,Electronics,62.37,443,2025-05-17
+87,product_87,Home & Garden,104.5,188,2025-01-24
+88,product_88,Home & Garden,57.43,286,2025-01-09
+89,product_89,Home & Garden,117.5,315,2024-08-24
+90,product_90,Electronics,120.06,424,2024-11-07
+91,product_91,Home & Garden,188.66,379,2025-04-23
+92,product_92,Electronics,173.9,466,2025-02-18
+93,product_93,Electronics,19.59,270,2024-07-07
+94,product_94,Electronics,195.47,58,2024-09-08
+95,product_95,Electronics,199.75,78,2025-01-02
+96,product_96,Clothing,58.11,495,2024-12-31
+97,product_97,Electronics,170.85,296,2025-03-22
+98,product_98,Electronics,121.3,333,2024-07-15
+99,product_99,Clothing,206.04,243,2025-02-08
+100,product_100,Clothing,150.22,85,2024-07-03
+101,product_101,Clothing,67.88,118,2025-06-17
+102,product_102,Electronics,185.43,484,2025-06-16
+103,product_103,Electronics,112.07,72,2025-05-11
+104,product_104,Clothing,114.36,309,2025-01-11
+105,product_105,Electronics,115.3,464,2025-03-10
+106,product_106,Home & Garden,136.87,412,2024-07-11
+107,product_107,Clothing,186.61,94,2024-10-16
+108,product_108,Clothing,88.1,471,2025-01-05
+109,product_109,Home & Garden,40.94,309,2024-08-24
+110,product_110,Electronics,186.13,154,2024-07-13
+111,product_111,Clothing,171.27,375,2025-04-20
+112,product_112,Electronics,86.78,149,2024-06-25
+113,product_113,Clothing,113.92,385,2025-04-19
+114,product_114,Clothing,117.85,177,2025-06-05
+115,product_115,Electronics,177.16,407,2025-06-21
+116,product_116,Home & Garden,199.83,382,2025-02-17
+117,product_117,Clothing,47.85,426,2025-04-18
+118,product_118,Electronics,176.18,336,2025-02-02
+119,product_119,Clothing,141.05,327,2025-06-02
+120,product_120,Home & Garden,155.38,478,2024-07-13
+121,product_121,Clothing,51.74,217,2025-02-27
+122,product_122,Home & Garden,183.47,425,2024-07-29
+123,product_123,Electronics,89.28,46,2024-09-30
+124,product_124,Home & Garden,95.27,228,2024-09-28
+125,product_125,Clothing,62.76,122,2024-12-10
+126,product_126,Electronics,141.61,286,2025-03-11
+127,product_127,Electronics,86.1,391,2024-07-23
+128,product_128,Home & Garden,172.1,105,2024-07-09
+129,product_129,Clothing,171.82,295,2024-08-28
+130,product_130,Home & Garden,173.73,329,2024-08-06
+131,product_131,Home & Garden,164.56,456,2024-08-10
+132,product_132,Electronics,86.63,96,2025-01-05
+133,product_133,Clothing,61.62,398,2025-06-16
+134,product_134,Clothing,119.44,435,2025-05-29
+135,product_135,Electronics,76.81,320,2025-03-04
+136,product_136,Home & Garden,138.84,237,2024-09-18
+137,product_137,Clothing,50.23,427,2024-08-20
+138,product_138,Home & Garden,113.94,489,2025-05-04
+139,product_139,Home & Garden,190.56,218,2024-09-20
+140,product_140,Electronics,161.95,239,2025-03-22
+141,product_141,Home & Garden,193.83,262,2024-11-25
+142,product_142,Electronics,28.06,343,2024-07-04
+143,product_143,Home & Garden,208.43,266,2025-02-01
+144,product_144,Electronics,11.43,483,2024-11-13
+145,product_145,Electronics,88.56,259,2025-05-19
+146,product_146,Clothing,134.85,7,2025-05-03
+147,product_147,Home & Garden,52.21,437,2025-02-19
+148,product_148,Clothing,75.13,13,2024-11-17
+149,product_149,Clothing,138.17,376,2025-01-07
+150,product_150,Home & Garden,205.61,260,2024-08-25
+151,product_151,Clothing,108.47,305,2025-01-10
+152,product_152,Electronics,128.58,497,2024-08-19
+153,product_153,Clothing,119.95,184,2024-09-24
+154,product_154,Home & Garden,206.54,58,2024-11-25
+155,product_155,Clothing,147.79,224,2025-01-09
+156,product_156,Clothing,196.89,359,2024-09-16
+157,product_157,Electronics,37.23,72,2025-05-25
+158,product_158,Electronics,60.41,258,2024-06-22
+159,product_159,Home & Garden,28.92,75,2024-12-17
+160,product_160,Home & Garden,190.54,372,2024-07-28
+161,product_161,Home & Garden,15.34,203,2025-04-19
+162,product_162,Home & Garden,50.06,398,2024-08-06
+163,product_163,Electronics,106.21,368,2025-01-15
+164,product_164,Electronics,118.75,145,2024-09-09
+165,product_165,Electronics,190.26,355,2024-11-29
+166,product_166,Electronics,117.79,126,2025-01-01
+167,product_167,Electronics,92.8,203,2025-04-19
+168,product_168,Home & Garden,189.16,488,2025-03-30
+169,product_169,Electronics,66.05,462,2024-06-25
+170,product_170,Electronics,93.11,124,2024-06-24
+171,product_171,Home & Garden,100.7,234,2025-04-11
+172,product_172,Electronics,98.22,436,2025-05-23
+173,product_173,Clothing,117.39,250,2025-01-09
+174,product_174,Clothing,208.48,107,2024-09-30
+175,product_175,Home & Garden,183.66,287,2024-09-03
+176,product_176,Electronics,29.03,218,2024-10-25
+177,product_177,Electronics,53.72,103,2024-10-29
+178,product_178,Clothing,49.48,285,2025-02-20
+179,product_179,Home & Garden,121.94,84,2024-07-20
+180,product_180,Home & Garden,47.78,245,2025-03-10
+181,product_181,Clothing,196.71,363,2025-02-02
+182,product_182,Electronics,143.12,52,2025-02-01
+183,product_183,Clothing,163.87,30,2025-06-10
+184,product_184,Clothing,181.88,255,2025-04-25
+185,product_185,Home & Garden,204.83,312,2024-07-23
+186,product_186,Electronics,31.15,404,2025-01-22
+187,product_187,Electronics,191.45,370,2025-04-29
+188,product_188,Electronics,207.85,367,2024-07-09
+189,product_189,Clothing,33.55,319,2024-12-04
+190,product_190,Electronics,75.96,377,2025-01-30
+191,product_191,Electronics,26.32,267,2025-02-04
+192,product_192,Home & Garden,141.13,307,2025-05-18
+193,product_193,Electronics,183.41,182,2025-02-03
+194,product_194,Electronics,195.82,435,2024-07-09
+195,product_195,Home & Garden,182.38,411,2025-05-27
+196,product_196,Clothing,93.89,263,2024-08-01
+197,product_197,Electronics,150.63,200,2024-10-12
+198,product_198,Home & Garden,125.19,171,2024-12-17
+199,product_199,Clothing,172.91,315,2024-11-25
+200,product_200,Clothing,156.38,14,2025-01-03
+201,product_201,Electronics,65.09,61,2024-09-07
+202,product_202,Clothing,112.46,193,2024-08-05
+203,product_203,Electronics,106.7,173,2024-10-24
+204,product_204,Clothing,170.32,176,2024-12-19
+205,product_205,Home & Garden,154.73,194,2025-05-25
+206,product_206,Home & Garden,109.33,500,2024-08-26
+207,product_207,Home & Garden,99.66,470,2024-07-11
+208,product_208,Home & Garden,187.25,191,2024-07-19
+209,product_209,Home & Garden,201.63,488,2025-02-16
+210,product_210,Clothing,94.24,265,2025-02-25
+211,product_211,Clothing,119.9,265,2024-07-28
+212,product_212,Electronics,100.78,304,2025-02-11
+213,product_213,Home & Garden,158.51,33,2024-10-16
+214,product_214,Home & Garden,195.65,427,2024-12-01
+215,product_215,Electronics,78.37,77,2024-09-12
+216,product_216,Clothing,171.73,452,2024-12-12
+217,product_217,Clothing,180.57,378,2025-04-08
+218,product_218,Clothing,81.55,36,2024-07-24
+219,product_219,Clothing,22.71,265,2024-06-22
+220,product_220,Home & Garden,47.67,410,2025-02-21
+221,product_221,Electronics,176.07,280,2025-06-09
+222,product_222,Clothing,188.6,394,2024-07-27
+223,product_223,Clothing,199.03,53,2024-12-12
+224,product_224,Electronics,33.46,148,2024-11-04
+225,product_225,Clothing,40.01,420,2024-07-14
+226,product_226,Clothing,131.94,222,2024-07-29
+227,product_227,Home & Garden,47.78,5,2025-06-06
+228,product_228,Home & Garden,104.55,215,2025-06-05
+229,product_229,Home & Garden,196.76,320,2025-04-29
+230,product_230,Electronics,186.67,173,2024-12-24
+231,product_231,Clothing,27.89,32,2025-05-27
+232,product_232,Home & Garden,100.73,379,2024-12-10
+233,product_233,Electronics,77.91,88,2025-04-07
+234,product_234,Electronics,185.41,15,2025-01-02
+235,product_235,Clothing,174.53,464,2024-07-01
+236,product_236,Clothing,197.09,138,2024-11-14
+237,product_237,Clothing,187.01,117,2025-01-26
+238,product_238,Electronics,143.82,46,2025-04-03
+239,product_239,Home & Garden,97.39,171,2025-01-19
+240,product_240,Home & Garden,28.06,183,2024-11-16
+241,product_241,Home & Garden,190.75,327,2024-11-05
+242,product_242,Home & Garden,50.91,259,2025-04-05
+243,product_243,Home & Garden,132.65,440,2025-01-29
+244,product_244,Clothing,54.18,441,2025-04-21
+245,product_245,Clothing,153.54,437,2024-09-08
+246,product_246,Electronics,74.09,444,2025-02-12
+247,product_247,Clothing,171.87,398,2024-12-08
+248,product_248,Clothing,170.41,119,2024-10-20
+249,product_249,Electronics,135.86,497,2024-10-26
+250,product_250,Home & Garden,195.3,478,2025-01-08
+251,product_251,Home & Garden,158.67,311,2025-05-09
+252,product_252,Home & Garden,194.33,99,2025-05-24
+253,product_253,Electronics,127.58,115,2024-07-24
+254,product_254,Electronics,124.88,68,2024-08-25
+255,product_255,Home & Garden,33.71,246,2024-12-02
+256,product_256,Clothing,117.22,106,2024-08-30
+257,product_257,Clothing,29.54,246,2024-10-17
+258,product_258,Home & Garden,78.94,359,2025-02-20
+259,product_259,Home & Garden,130.35,31,2024-12-17
+260,product_260,Clothing,191.34,202,2024-10-13
+261,product_261,Clothing,20.99,214,2025-02-23
+262,product_262,Home & Garden,204.29,177,2024-08-19
+263,product_263,Clothing,16.6,342,2025-03-25
+264,product_264,Clothing,166.83,306,2024-10-07
+265,product_265,Electronics,61.79,98,2025-05-21
+266,product_266,Electronics,170.64,178,2025-03-01
+267,product_267,Electronics,114.64,152,2025-06-19
+268,product_268,Clothing,55.3,201,2025-03-29
+269,product_269,Home & Garden,115.93,231,2025-01-07
+270,product_270,Electronics,151.51,224,2024-10-02
+271,product_271,Home & Garden,71.74,30,2024-11-09
+272,product_272,Home & Garden,160.59,313,2024-10-20
+273,product_273,Clothing,128.05,472,2025-02-22
+274,product_274,Home & Garden,78.81,394,2024-12-13
+275,product_275,Clothing,104.71,300,2025-03-30
+276,product_276,Clothing,164.44,364,2025-02-22
+277,product_277,Electronics,37.51,406,2025-03-31
+278,product_278,Electronics,16.86,316,2024-12-09
+279,product_279,Home & Garden,84.67,99,2025-06-15
+280,product_280,Home & Garden,33.92,235,2024-12-17
+281,product_281,Electronics,35.21,406,2025-04-20
+282,product_282,Electronics,153.38,283,2024-08-07
+283,product_283,Home & Garden,17.21,101,2025-02-26
+284,product_284,Clothing,95.79,474,2024-08-06
+285,product_285,Electronics,41.58,74,2024-07-09
+286,product_286,Electronics,92.82,186,2024-12-22
+287,product_287,Clothing,55.39,397,2025-02-13
+288,product_288,Electronics,197.76,182,2024-06-29
+289,product_289,Electronics,192.96,369,2024-10-16
+290,product_290,Electronics,92.5,133,2025-02-27
+291,product_291,Clothing,133.1,42,2025-02-09
+292,product_292,Home & Garden,167.4,99,2025-03-31
+293,product_293,Clothing,65.28,497,2025-02-15
+294,product_294,Clothing,100.2,370,2025-04-28
+295,product_295,Clothing,189.39,412,2025-02-06
+296,product_296,Electronics,70.6,359,2024-08-22
+297,product_297,Clothing,65.24,45,2025-01-20
+298,product_298,Clothing,144.62,414,2025-03-09
+299,product_299,Clothing,113.6,151,2024-10-24
+300,product_300,Home & Garden,24.4,428,2025-04-06
+301,product_301,Home & Garden,106.48,424,2025-05-01
+302,product_302,Home & Garden,177.26,139,2024-11-14
+303,product_303,Electronics,89.51,64,2025-01-26
+304,product_304,Home & Garden,138.27,123,2025-04-17
+305,product_305,Clothing,42.97,421,2024-08-04
+306,product_306,Home & Garden,97.98,117,2025-02-14
+307,product_307,Home & Garden,12.74,188,2025-04-25
+308,product_308,Home & Garden,65.12,243,2024-09-01
+309,product_309,Home & Garden,190.1,380,2024-09-11
+310,product_310,Clothing,143.06,361,2025-03-13
+311,product_311,Electronics,61.98,212,2025-01-02
+312,product_312,Electronics,121.4,447,2024-11-05
+313,product_313,Clothing,50.61,155,2024-11-02
+314,product_314,Clothing,38.48,18,2025-02-21
+315,product_315,Electronics,195.11,340,2025-06-02
+316,product_316,Electronics,128.44,111,2025-04-08
+317,product_317,Home & Garden,160.79,170,2024-08-29
+318,product_318,Electronics,43.15,496,2024-06-24
+319,product_319,Electronics,36.53,172,2024-08-26
+320,product_320,Home & Garden,42.24,486,2024-11-04
+321,product_321,Electronics,168.73,338,2025-04-23
+322,product_322,Clothing,89.44,158,2024-08-12
+323,product_323,Home & Garden,131.27,24,2025-01-04
+324,product_324,Home & Garden,51.95,21,2025-03-15
+325,product_325,Clothing,17.44,252,2025-04-18
+326,product_326,Clothing,74.47,367,2025-05-11
+327,product_327,Clothing,175.38,364,2025-03-13
+328,product_328,Clothing,105.11,396,2024-09-28
+329,product_329,Electronics,84.28,230,2024-10-11
+330,product_330,Clothing,35.7,164,2024-11-11
+331,product_331,Electronics,25.01,280,2025-02-02
+332,product_332,Electronics,52.1,423,2025-01-30
+333,product_333,Home & Garden,20.55,3,2025-02-12
+334,product_334,Home & Garden,94.95,203,2024-08-06
+335,product_335,Home & Garden,78.6,154,2024-10-19
+336,product_336,Clothing,185.41,292,2025-06-01
+337,product_337,Electronics,93.53,148,2025-06-21
+338,product_338,Electronics,99.85,459,2025-04-07
+339,product_339,Electronics,46.43,257,2025-02-27
+340,product_340,Home & Garden,104.4,181,2024-07-05
+341,product_341,Clothing,156.1,371,2024-10-24
+342,product_342,Home & Garden,115.68,311,2024-08-13
+343,product_343,Clothing,188.85,356,2025-02-16
+344,product_344,Clothing,50.54,131,2024-10-30
+345,product_345,Home & Garden,136.52,385,2024-08-16
+346,product_346,Electronics,39.34,90,2025-01-19
+347,product_347,Clothing,158.62,498,2024-10-26
+348,product_348,Home & Garden,94.57,59,2024-12-08
+349,product_349,Clothing,115.54,216,2025-03-07
+350,product_350,Clothing,33.42,274,2024-07-15
+351,product_351,Home & Garden,97.39,20,2025-06-12
+352,product_352,Clothing,201.42,227,2024-10-02
+353,product_353,Home & Garden,31.14,78,2024-11-04
+354,product_354,Electronics,10.54,391,2024-11-10
+355,product_355,Clothing,21.91,303,2025-04-23
+356,product_356,Electronics,73.76,98,2025-02-02
+357,product_357,Electronics,126.75,223,2025-06-03
+358,product_358,Electronics,136.37,445,2024-11-13
+359,product_359,Electronics,105.49,341,2024-10-09
+360,product_360,Electronics,25.59,467,2024-08-14
+361,product_361,Clothing,99.81,277,2024-08-15
+362,product_362,Electronics,79.15,89,2025-02-20
+363,product_363,Electronics,207.58,215,2024-12-18
+364,product_364,Clothing,96.09,86,2024-12-12
+365,product_365,Electronics,183.02,472,2024-07-28
+366,product_366,Home & Garden,207.03,185,2024-08-21
+367,product_367,Clothing,56.93,364,2024-11-07
+368,product_368,Electronics,67.97,448,2025-04-23
+369,product_369,Home & Garden,143.34,308,2024-08-02
+370,product_370,Clothing,83.38,345,2024-09-01
+371,product_371,Electronics,206.99,364,2024-09-24
+372,product_372,Electronics,150.89,237,2024-07-06
+373,product_373,Electronics,89.14,177,2024-10-24
+374,product_374,Clothing,205.45,398,2025-03-11
+375,product_375,Electronics,64.55,296,2024-07-08
+376,product_376,Electronics,199.59,226,2024-11-02
+377,product_377,Clothing,58.61,408,2024-10-14
+378,product_378,Clothing,79.13,74,2025-01-15
+379,product_379,Electronics,38.6,68,2024-09-05
+380,product_380,Clothing,57.07,102,2024-10-03
+381,product_381,Home & Garden,107.18,275,2024-08-14
+382,product_382,Clothing,44.64,441,2024-09-25
+383,product_383,Home & Garden,61.17,113,2025-03-11
+384,product_384,Clothing,99.28,42,2025-05-05
+385,product_385,Electronics,157.13,444,2024-12-24
+386,product_386,Electronics,81.01,479,2025-02-24
+387,product_387,Home & Garden,86.25,492,2024-08-16
+388,product_388,Electronics,42.16,365,2025-06-09
+389,product_389,Clothing,129.85,138,2024-07-08
+390,product_390,Home & Garden,119.32,367,2024-07-01
+391,product_391,Clothing,21.28,206,2025-04-09
+392,product_392,Home & Garden,112.21,484,2024-10-25
+393,product_393,Electronics,65.33,474,2024-10-08
+394,product_394,Electronics,20.77,298,2024-10-05
+395,product_395,Electronics,80.44,467,2025-02-05
+396,product_396,Electronics,149.89,346,2025-04-09
+397,product_397,Home & Garden,36.69,183,2024-08-04
+398,product_398,Clothing,162.4,46,2024-06-28
+399,product_399,Electronics,41.51,409,2024-11-22
+400,product_400,Clothing,68.54,351,2024-10-14
+401,product_401,Clothing,156.7,183,2024-07-23
+402,product_402,Clothing,72.54,414,2025-06-11
+403,product_403,Clothing,102.08,117,2024-12-18
+404,product_404,Clothing,65.18,174,2025-01-13
+405,product_405,Clothing,127.81,431,2024-08-12
+406,product_406,Electronics,11.77,391,2024-10-27
+407,product_407,Home & Garden,146.71,186,2024-07-20
+408,product_408,Electronics,200.1,122,2025-03-17
+409,product_409,Home & Garden,126.89,41,2025-05-28
+410,product_410,Clothing,199.21,171,2024-10-18
+411,product_411,Clothing,37.86,185,2025-03-20
+412,product_412,Clothing,39.38,323,2025-01-03
+413,product_413,Home & Garden,83.24,496,2024-07-21
+414,product_414,Electronics,54.02,52,2025-04-11
+415,product_415,Clothing,185.49,432,2025-03-15
+416,product_416,Clothing,99.08,469,2024-07-29
+417,product_417,Electronics,82.93,213,2024-07-25
+418,product_418,Electronics,82.28,77,2024-08-20
+419,product_419,Electronics,131.08,422,2024-07-05
+420,product_420,Home & Garden,33.53,364,2024-06-26
+421,product_421,Electronics,108.59,37,2025-02-10
+422,product_422,Electronics,182.99,130,2025-01-27
+423,product_423,Clothing,49.76,329,2025-03-30
+424,product_424,Clothing,156.57,378,2025-04-30
+425,product_425,Home & Garden,122.43,83,2025-05-24
+426,product_426,Home & Garden,201.0,435,2025-01-16
+427,product_427,Electronics,189.87,438,2024-09-24
+428,product_428,Electronics,110.11,364,2024-11-11
+429,product_429,Home & Garden,52.5,220,2025-01-16
+430,product_430,Home & Garden,148.61,371,2025-03-25
+431,product_431,Electronics,18.97,68,2025-01-10
+432,product_432,Home & Garden,53.92,51,2024-11-13
+433,product_433,Electronics,191.55,466,2025-02-25
+434,product_434,Clothing,112.41,335,2024-10-09
+435,product_435,Home & Garden,51.9,415,2025-06-04
+436,product_436,Electronics,185.66,295,2024-08-21
+437,product_437,Clothing,55.02,302,2025-03-12
+438,product_438,Electronics,160.61,98,2024-11-10
+439,product_439,Clothing,46.3,209,2024-12-30
+440,product_440,Clothing,110.11,95,2025-06-10
+441,product_441,Clothing,40.71,27,2024-09-09
+442,product_442,Home & Garden,62.69,384,2024-10-03
+443,product_443,Electronics,99.56,313,2025-04-02
+444,product_444,Clothing,144.45,142,2025-04-17
+445,product_445,Electronics,179.5,132,2025-06-09
+446,product_446,Home & Garden,137.92,391,2024-06-23
+447,product_447,Home & Garden,22.15,374,2025-03-09
+448,product_448,Home & Garden,138.37,384,2024-09-27
+449,product_449,Electronics,194.58,47,2025-04-02
+450,product_450,Electronics,191.8,340,2024-07-11
+451,product_451,Clothing,190.54,9,2025-04-26
+452,product_452,Clothing,99.42,141,2025-03-23
+453,product_453,Home & Garden,26.2,443,2024-12-21
+454,product_454,Electronics,192.91,228,2025-06-19
+455,product_455,Home & Garden,188.13,239,2024-12-14
+456,product_456,Electronics,202.01,204,2025-06-08
+457,product_457,Clothing,135.08,134,2025-02-20
+458,product_458,Home & Garden,190.19,340,2024-10-17
+459,product_459,Home & Garden,124.81,247,2025-03-08
+460,product_460,Home & Garden,166.18,233,2024-11-10
+461,product_461,Electronics,137.54,155,2025-03-13
+462,product_462,Electronics,29.1,338,2024-10-11
+463,product_463,Electronics,144.3,334,2025-06-16
+464,product_464,Electronics,22.8,491,2025-01-03
+465,product_465,Clothing,109.88,254,2025-04-04
+466,product_466,Clothing,158.02,55,2024-08-10
+467,product_467,Clothing,100.26,263,2025-01-19
+468,product_468,Clothing,151.4,443,2024-08-05
+469,product_469,Electronics,154.64,169,2024-12-03
+470,product_470,Home & Garden,149.66,225,2024-11-25
+471,product_471,Clothing,117.72,434,2025-02-10
+472,product_472,Clothing,145.62,345,2025-01-06
+473,product_473,Home & Garden,85.91,451,2024-11-13
+474,product_474,Clothing,38.94,267,2025-02-16
+475,product_475,Electronics,194.62,455,2025-03-13
+476,product_476,Home & Garden,180.45,13,2024-08-08
+477,product_477,Home & Garden,159.3,50,2025-04-13
+478,product_478,Clothing,194.23,17,2024-11-25
+479,product_479,Clothing,99.91,317,2024-12-25
+480,product_480,Home & Garden,132.2,441,2024-11-27
+481,product_481,Home & Garden,135.25,104,2025-05-02
+482,product_482,Electronics,163.77,218,2024-10-01
+483,product_483,Home & Garden,55.39,168,2024-12-24
+484,product_484,Electronics,25.36,263,2024-07-04
+485,product_485,Clothing,107.42,225,2025-03-13
+486,product_486,Electronics,183.48,497,2025-02-14
+487,product_487,Home & Garden,208.06,345,2025-01-29
+488,product_488,Electronics,95.65,255,2025-02-10
+489,product_489,Home & Garden,115.42,486,2025-05-28
+490,product_490,Home & Garden,208.68,441,2025-05-28
+491,product_491,Electronics,50.81,217,2024-08-11
+492,product_492,Home & Garden,173.34,183,2024-08-27
+493,product_493,Electronics,21.87,437,2025-06-16
+494,product_494,Electronics,24.0,443,2024-11-03
+495,product_495,Electronics,201.35,293,2025-05-12
+496,product_496,Electronics,73.42,189,2025-02-22
+497,product_497,Electronics,115.12,23,2024-07-07
+498,product_498,Electronics,11.29,99,2025-01-13
+499,product_499,Electronics,192.13,142,2024-07-12
+500,product_500,Clothing,106.04,166,2025-04-28
+501,product_501,Electronics,32.75,393,2024-10-13
+502,product_502,Electronics,162.79,423,2024-09-26
+503,product_503,Electronics,14.69,155,2024-12-07
+504,product_504,Home & Garden,132.99,219,2024-12-10
+505,product_505,Home & Garden,98.14,437,2024-08-04
+506,product_506,Home & Garden,179.48,174,2024-06-27
+507,product_507,Clothing,199.03,240,2025-02-09
+508,product_508,Home & Garden,183.44,291,2024-08-23
+509,product_509,Clothing,15.19,330,2025-05-17
+510,product_510,Electronics,184.29,381,2024-10-26
+511,product_511,Clothing,141.47,118,2025-06-10
+512,product_512,Clothing,81.29,111,2024-12-16
+513,product_513,Clothing,145.08,332,2024-08-27
+514,product_514,Home & Garden,88.57,122,2024-10-02
+515,product_515,Home & Garden,122.39,108,2024-10-31
+516,product_516,Home & Garden,134.15,464,2024-08-12
+517,product_517,Electronics,117.71,431,2024-08-15
+518,product_518,Home & Garden,89.45,299,2024-08-11
+519,product_519,Electronics,36.22,374,2024-09-09
+520,product_520,Clothing,191.58,423,2024-08-01
+521,product_521,Clothing,26.31,335,2024-10-13
+522,product_522,Clothing,88.77,77,2024-12-19
+523,product_523,Electronics,42.04,225,2025-03-02
+524,product_524,Home & Garden,92.15,423,2024-10-29
+525,product_525,Home & Garden,121.59,369,2024-12-03
+526,product_526,Clothing,103.42,15,2024-09-14
+527,product_527,Electronics,135.39,306,2024-07-30
+528,product_528,Clothing,77.32,195,2024-08-21
+529,product_529,Home & Garden,72.53,380,2025-04-01
+530,product_530,Electronics,103.13,106,2024-11-05
+531,product_531,Electronics,76.35,426,2025-01-31
+532,product_532,Home & Garden,41.81,187,2025-04-09
+533,product_533,Electronics,169.99,11,2024-06-23
+534,product_534,Clothing,172.77,441,2025-05-17
+535,product_535,Home & Garden,116.45,14,2024-10-14
+536,product_536,Clothing,187.0,139,2025-05-24
+537,product_537,Electronics,133.55,447,2025-04-29
+538,product_538,Home & Garden,54.99,428,2025-04-29
+539,product_539,Clothing,138.85,203,2024-08-03
+540,product_540,Home & Garden,183.92,95,2024-09-02
+541,product_541,Home & Garden,180.21,168,2025-04-10
+542,product_542,Clothing,102.83,52,2025-01-20
+543,product_543,Electronics,114.65,340,2024-09-26
+544,product_544,Electronics,33.34,185,2025-01-02
+545,product_545,Electronics,45.22,263,2024-11-07
+546,product_546,Home & Garden,137.21,395,2024-08-06
+547,product_547,Electronics,30.92,223,2025-01-19
+548,product_548,Home & Garden,95.1,132,2025-02-23
+549,product_549,Clothing,58.72,293,2025-06-20
+550,product_550,Clothing,46.32,261,2024-09-17
+551,product_551,Electronics,95.72,307,2024-09-20
+552,product_552,Electronics,113.15,214,2024-07-24
+553,product_553,Home & Garden,205.46,209,2024-09-14
+554,product_554,Home & Garden,46.82,110,2024-11-20
+555,product_555,Electronics,151.09,496,2025-04-19
+556,product_556,Clothing,128.0,329,2024-11-09
+557,product_557,Clothing,207.93,397,2024-10-14
+558,product_558,Electronics,85.94,208,2024-10-20
+559,product_559,Electronics,87.06,354,2024-09-05
+560,product_560,Clothing,108.65,136,2024-09-01
+561,product_561,Electronics,34.43,44,2024-07-03
+562,product_562,Home & Garden,200.38,280,2024-12-02
+563,product_563,Home & Garden,141.32,96,2024-11-09
+564,product_564,Clothing,24.34,183,2025-06-10
+565,product_565,Electronics,10.31,199,2024-08-04
+566,product_566,Home & Garden,201.92,448,2024-10-26
+567,product_567,Clothing,209.64,310,2024-10-07
+568,product_568,Clothing,169.92,324,2024-12-12
+569,product_569,Home & Garden,78.02,211,2025-02-01
+570,product_570,Electronics,37.46,76,2025-02-05
+571,product_571,Electronics,111.06,486,2024-12-25
+572,product_572,Home & Garden,99.03,193,2025-02-28
+573,product_573,Home & Garden,81.05,219,2025-03-24
+574,product_574,Electronics,118.22,215,2025-04-12
+575,product_575,Home & Garden,31.65,414,2024-11-21
+576,product_576,Clothing,73.66,55,2025-01-05
+577,product_577,Electronics,103.71,446,2024-08-28
+578,product_578,Home & Garden,73.1,153,2025-01-30
+579,product_579,Electronics,83.45,135,2024-12-07
+580,product_580,Clothing,88.06,290,2025-01-29
+581,product_581,Home & Garden,148.55,291,2025-03-20
+582,product_582,Home & Garden,88.63,40,2025-03-16
+583,product_583,Electronics,94.67,368,2025-03-03
+584,product_584,Electronics,143.62,38,2024-09-05
+585,product_585,Electronics,186.82,196,2025-04-17
+586,product_586,Clothing,125.77,288,2025-02-07
+587,product_587,Clothing,73.52,475,2024-07-06
+588,product_588,Electronics,203.51,75,2024-10-28
+589,product_589,Home & Garden,30.4,53,2024-08-14
+590,product_590,Home & Garden,157.55,212,2025-02-26
+591,product_591,Home & Garden,99.95,482,2024-09-20
+592,product_592,Electronics,201.0,16,2025-04-19
+593,product_593,Home & Garden,197.1,327,2024-06-29
+594,product_594,Home & Garden,178.96,241,2024-11-09
+595,product_595,Electronics,70.05,488,2024-12-02
+596,product_596,Clothing,138.8,258,2024-11-08
+597,product_597,Electronics,101.02,274,2024-10-08
+598,product_598,Electronics,81.3,148,2025-05-26
+599,product_599,Electronics,129.6,76,2024-12-09
+600,product_600,Clothing,73.37,18,2025-04-19
+601,product_601,Electronics,187.82,254,2024-07-26
+602,product_602,Home & Garden,145.92,380,2024-11-26
+603,product_603,Electronics,201.37,275,2024-10-30
+604,product_604,Home & Garden,24.95,72,2024-09-18
+605,product_605,Home & Garden,164.13,388,2024-07-16
+606,product_606,Home & Garden,198.04,98,2025-05-27
+607,product_607,Electronics,185.65,354,2025-04-15
+608,product_608,Electronics,15.48,23,2024-08-27
+609,product_609,Clothing,156.52,143,2024-08-27
+610,product_610,Electronics,13.11,479,2024-09-01
+611,product_611,Home & Garden,135.74,146,2024-12-17
+612,product_612,Home & Garden,102.54,130,2025-02-19
+613,product_613,Home & Garden,89.0,157,2025-04-22
+614,product_614,Home & Garden,11.82,162,2024-10-16
+615,product_615,Electronics,180.22,168,2024-07-11
+616,product_616,Clothing,115.46,172,2025-02-24
+617,product_617,Electronics,55.19,326,2025-02-14
+618,product_618,Clothing,74.66,334,2024-09-27
+619,product_619,Electronics,152.11,367,2024-12-08
+620,product_620,Electronics,130.59,218,2025-01-24
+621,product_621,Clothing,50.73,135,2024-08-25
+622,product_622,Home & Garden,149.7,335,2024-09-23
+623,product_623,Clothing,190.14,299,2024-08-27
+624,product_624,Clothing,102.21,195,2025-03-22
+625,product_625,Clothing,149.51,227,2024-08-10
+626,product_626,Electronics,14.34,290,2024-08-17
+627,product_627,Home & Garden,116.96,94,2024-08-13
+628,product_628,Home & Garden,149.54,321,2024-11-26
+629,product_629,Home & Garden,189.54,348,2025-04-19
+630,product_630,Electronics,109.0,403,2024-11-14
+631,product_631,Electronics,97.95,44,2024-09-12
+632,product_632,Electronics,110.34,306,2024-09-05
+633,product_633,Electronics,30.31,261,2024-11-16
+634,product_634,Electronics,177.94,178,2025-05-06
+635,product_635,Clothing,158.86,371,2025-02-01
+636,product_636,Clothing,104.68,446,2024-11-21
+637,product_637,Home & Garden,60.09,82,2024-09-16
+638,product_638,Home & Garden,125.77,203,2024-10-13
+639,product_639,Home & Garden,195.98,393,2024-09-18
+640,product_640,Home & Garden,30.42,155,2025-03-24
+641,product_641,Home & Garden,102.93,413,2024-09-04
+642,product_642,Clothing,181.86,70,2024-09-05
+643,product_643,Electronics,176.1,479,2025-03-28
+644,product_644,Clothing,88.69,474,2024-07-08
+645,product_645,Home & Garden,142.38,332,2024-12-30
+646,product_646,Clothing,175.63,40,2025-03-25
+647,product_647,Clothing,192.0,312,2024-10-14
+648,product_648,Home & Garden,96.95,277,2025-06-17
+649,product_649,Home & Garden,34.72,463,2024-09-13
+650,product_650,Home & Garden,43.13,163,2024-08-29
+651,product_651,Electronics,84.51,222,2025-02-24
+652,product_652,Electronics,10.96,93,2024-11-03
+653,product_653,Clothing,11.86,145,2025-06-12
+654,product_654,Clothing,135.51,324,2024-12-23
+655,product_655,Home & Garden,39.74,444,2025-05-29
+656,product_656,Electronics,59.69,409,2025-01-20
+657,product_657,Electronics,200.71,274,2024-10-08
+658,product_658,Home & Garden,113.86,366,2025-01-23
+659,product_659,Clothing,83.59,341,2025-01-30
+660,product_660,Home & Garden,95.76,401,2024-07-14
+661,product_661,Electronics,199.95,130,2024-07-12
+662,product_662,Clothing,152.24,435,2024-07-19
+663,product_663,Electronics,103.52,29,2025-03-19
+664,product_664,Electronics,172.48,73,2024-07-22
+665,product_665,Home & Garden,108.1,146,2024-10-27
+666,product_666,Electronics,125.55,94,2024-09-07
+667,product_667,Clothing,40.44,159,2024-10-01
+668,product_668,Home & Garden,48.22,334,2024-09-01
+669,product_669,Clothing,32.44,392,2025-02-22
+670,product_670,Clothing,129.32,24,2024-08-26
+671,product_671,Clothing,115.63,32,2024-07-03
+672,product_672,Clothing,102.18,231,2024-11-23
+673,product_673,Clothing,152.55,41,2025-03-05
+674,product_674,Home & Garden,36.98,8,2025-05-05
+675,product_675,Clothing,112.38,357,2025-06-19
+676,product_676,Home & Garden,126.73,197,2025-06-19
+677,product_677,Home & Garden,40.77,132,2025-01-22
+678,product_678,Electronics,53.09,311,2024-10-17
+679,product_679,Electronics,37.48,431,2025-04-29
+680,product_680,Clothing,49.81,486,2025-02-23
+681,product_681,Clothing,203.23,87,2024-11-03
+682,product_682,Home & Garden,188.64,379,2024-11-22
+683,product_683,Clothing,15.69,236,2025-01-14
+684,product_684,Electronics,158.99,429,2024-08-11
+685,product_685,Clothing,39.86,413,2025-01-09
+686,product_686,Home & Garden,126.94,307,2025-05-26
+687,product_687,Clothing,161.64,358,2024-12-23
+688,product_688,Home & Garden,136.36,373,2024-08-08
+689,product_689,Clothing,178.59,364,2024-12-18
+690,product_690,Electronics,161.08,5,2025-04-06
+691,product_691,Clothing,40.94,212,2025-06-08
+692,product_692,Electronics,163.21,296,2025-04-02
+693,product_693,Clothing,55.43,141,2025-02-09
+694,product_694,Home & Garden,84.44,334,2024-07-27
+695,product_695,Electronics,33.27,301,2025-06-12
+696,product_696,Electronics,198.95,483,2024-07-07
+697,product_697,Clothing,41.93,15,2024-07-30
+698,product_698,Electronics,203.08,21,2025-02-05
+699,product_699,Home & Garden,192.22,132,2025-03-22
+700,product_700,Clothing,146.83,258,2025-05-01
+701,product_701,Electronics,97.56,281,2024-11-05
+702,product_702,Home & Garden,199.38,55,2024-11-16
+703,product_703,Clothing,25.15,355,2025-02-27
+704,product_704,Clothing,68.82,489,2024-06-24
+705,product_705,Home & Garden,170.99,228,2025-01-06
+706,product_706,Electronics,181.25,40,2024-10-01
+707,product_707,Clothing,83.02,477,2024-08-17
+708,product_708,Electronics,112.11,485,2024-06-29
+709,product_709,Electronics,13.94,341,2024-10-10
+710,product_710,Home & Garden,157.8,151,2025-03-10
+711,product_711,Electronics,98.29,150,2025-01-11
+712,product_712,Electronics,135.85,311,2025-05-06
+713,product_713,Clothing,165.63,139,2024-07-16
+714,product_714,Home & Garden,11.36,246,2024-12-09
+715,product_715,Clothing,62.16,492,2024-07-18
+716,product_716,Clothing,128.96,473,2024-07-22
+717,product_717,Electronics,80.16,359,2024-07-14
+718,product_718,Clothing,38.46,500,2025-02-17
+719,product_719,Electronics,102.46,270,2024-09-26
+720,product_720,Home & Garden,126.52,183,2025-03-08
+721,product_721,Clothing,64.93,358,2024-08-02
+722,product_722,Electronics,93.45,329,2024-08-21
+723,product_723,Electronics,149.29,302,2024-07-09
+724,product_724,Clothing,193.35,10,2024-07-25
+725,product_725,Clothing,151.42,485,2024-09-11
+726,product_726,Home & Garden,127.65,297,2025-04-21
+727,product_727,Electronics,26.09,207,2025-01-09
+728,product_728,Clothing,205.08,37,2025-03-31
+729,product_729,Home & Garden,17.51,117,2024-09-10
+730,product_730,Clothing,141.01,229,2025-03-12
+731,product_731,Home & Garden,173.99,128,2025-01-01
+732,product_732,Electronics,161.4,246,2024-11-26
+733,product_733,Home & Garden,80.78,10,2025-03-30
+734,product_734,Clothing,192.89,252,2025-03-31
+735,product_735,Clothing,47.37,383,2025-05-08
+736,product_736,Clothing,160.67,492,2024-07-31
+737,product_737,Electronics,47.18,152,2025-01-18
+738,product_738,Electronics,171.99,290,2025-02-22
+739,product_739,Home & Garden,33.73,285,2025-04-16
+740,product_740,Clothing,145.86,52,2025-06-18
+741,product_741,Electronics,174.68,421,2024-11-18
+742,product_742,Clothing,169.01,364,2024-10-09
+743,product_743,Clothing,54.1,100,2024-12-10
+744,product_744,Home & Garden,190.03,430,2025-02-22
+745,product_745,Home & Garden,110.22,485,2024-11-14
+746,product_746,Electronics,27.1,198,2025-01-01
+747,product_747,Electronics,177.16,451,2024-09-28
+748,product_748,Electronics,38.77,218,2025-02-08
+749,product_749,Home & Garden,104.39,174,2025-01-19
+750,product_750,Home & Garden,114.6,273,2024-08-30
+751,product_751,Electronics,102.19,434,2024-07-28
+752,product_752,Clothing,112.18,326,2025-02-17
+753,product_753,Clothing,77.54,248,2024-10-23
+754,product_754,Clothing,119.92,498,2025-01-20
+755,product_755,Home & Garden,139.42,96,2024-07-02
+756,product_756,Home & Garden,146.41,315,2025-01-19
+757,product_757,Electronics,206.16,305,2024-11-03
+758,product_758,Electronics,159.04,491,2025-03-13
+759,product_759,Clothing,63.13,452,2025-05-27
+760,product_760,Home & Garden,27.34,30,2024-06-28
+761,product_761,Electronics,158.56,80,2024-08-20
+762,product_762,Home & Garden,132.25,70,2025-02-26
+763,product_763,Electronics,40.46,36,2025-03-02
+764,product_764,Home & Garden,178.44,495,2024-11-25
+765,product_765,Home & Garden,14.69,74,2024-10-07
+766,product_766,Clothing,83.1,382,2025-02-02
+767,product_767,Clothing,15.76,225,2024-10-23
+768,product_768,Electronics,185.56,322,2024-08-01
+769,product_769,Clothing,159.39,264,2025-01-06
+770,product_770,Home & Garden,64.34,290,2025-03-03
+771,product_771,Clothing,103.97,24,2024-09-02
+772,product_772,Clothing,199.26,8,2024-08-09
+773,product_773,Home & Garden,69.23,17,2024-10-28
+774,product_774,Home & Garden,10.39,498,2024-10-21
+775,product_775,Clothing,205.5,140,2024-06-24
+776,product_776,Clothing,54.15,15,2024-07-12
+777,product_777,Clothing,205.83,292,2025-06-21
+778,product_778,Clothing,140.35,31,2025-02-01
+779,product_779,Clothing,37.88,472,2024-07-14
+780,product_780,Clothing,181.88,45,2024-11-08
+781,product_781,Home & Garden,144.77,435,2024-10-16
+782,product_782,Clothing,157.49,16,2024-12-31
+783,product_783,Clothing,199.45,197,2025-03-15
+784,product_784,Clothing,163.62,292,2025-03-20
+785,product_785,Home & Garden,27.9,207,2024-07-16
+786,product_786,Clothing,183.27,8,2024-07-25
+787,product_787,Electronics,57.89,185,2025-01-24
+788,product_788,Home & Garden,173.12,26,2025-03-26
+789,product_789,Electronics,168.37,480,2025-03-07
+790,product_790,Clothing,161.13,401,2024-12-25
+791,product_791,Clothing,76.9,406,2024-10-01
+792,product_792,Electronics,124.87,238,2025-05-24
+793,product_793,Clothing,34.23,477,2024-10-29
+794,product_794,Clothing,203.16,439,2025-02-08
+795,product_795,Electronics,170.65,347,2024-08-24
+796,product_796,Electronics,133.04,103,2024-10-17
+797,product_797,Home & Garden,111.72,67,2024-12-02
+798,product_798,Clothing,154.34,95,2024-10-12
+799,product_799,Electronics,192.72,424,2024-09-27
+800,product_800,Home & Garden,155.79,88,2025-01-18
+801,product_801,Home & Garden,144.56,305,2025-06-04
+802,product_802,Clothing,140.98,448,2024-11-19
+803,product_803,Electronics,92.47,16,2024-10-12
+804,product_804,Electronics,194.99,236,2024-09-23
+805,product_805,Home & Garden,77.12,177,2025-04-11
+806,product_806,Clothing,179.75,361,2025-03-25
+807,product_807,Electronics,163.74,13,2024-12-31
+808,product_808,Clothing,89.33,261,2025-02-13
+809,product_809,Home & Garden,146.11,348,2024-08-03
+810,product_810,Clothing,121.42,131,2025-01-24
+811,product_811,Electronics,68.38,442,2024-09-29
+812,product_812,Clothing,206.15,289,2024-11-16
+813,product_813,Electronics,25.9,214,2025-03-21
+814,product_814,Electronics,47.21,124,2025-03-23
+815,product_815,Clothing,67.19,103,2024-11-14
+816,product_816,Electronics,177.41,461,2025-04-25
+817,product_817,Electronics,48.05,60,2024-07-31
+818,product_818,Clothing,136.48,336,2025-04-01
+819,product_819,Clothing,104.48,260,2025-02-13
+820,product_820,Electronics,74.46,361,2025-01-31
+821,product_821,Electronics,178.51,177,2025-05-15
+822,product_822,Clothing,31.58,89,2024-10-25
+823,product_823,Home & Garden,79.85,415,2024-07-06
+824,product_824,Electronics,160.18,496,2025-03-08
+825,product_825,Electronics,177.05,321,2025-01-21
+826,product_826,Electronics,159.12,155,2025-06-02
+827,product_827,Clothing,121.41,443,2025-02-17
+828,product_828,Clothing,44.86,229,2025-04-12
+829,product_829,Home & Garden,59.97,300,2024-10-19
+830,product_830,Home & Garden,13.61,411,2025-05-11
+831,product_831,Home & Garden,81.09,74,2024-09-13
+832,product_832,Clothing,175.57,91,2025-05-11
+833,product_833,Electronics,92.98,271,2024-07-03
+834,product_834,Clothing,166.23,362,2024-11-11
+835,product_835,Home & Garden,103.82,22,2025-06-04
+836,product_836,Clothing,62.67,32,2025-04-10
+837,product_837,Clothing,31.88,182,2025-05-29
+838,product_838,Home & Garden,204.48,149,2025-03-14
+839,product_839,Electronics,20.58,413,2025-02-02
+840,product_840,Home & Garden,40.35,84,2024-10-22
+841,product_841,Electronics,74.14,348,2024-09-27
+842,product_842,Clothing,97.74,379,2024-11-29
+843,product_843,Home & Garden,108.06,345,2025-01-29
+844,product_844,Clothing,116.99,189,2024-06-25
+845,product_845,Electronics,146.57,443,2024-09-21
+846,product_846,Clothing,57.84,141,2025-01-15
+847,product_847,Electronics,206.74,94,2024-09-06
+848,product_848,Home & Garden,193.04,390,2025-01-11
+849,product_849,Home & Garden,103.37,393,2024-10-10
+850,product_850,Clothing,125.25,221,2024-11-22
+851,product_851,Electronics,70.23,183,2025-03-19
+852,product_852,Home & Garden,66.27,73,2025-03-05
+853,product_853,Clothing,65.22,142,2024-09-05
+854,product_854,Clothing,114.67,169,2024-07-01
+855,product_855,Clothing,40.04,87,2025-02-26
+856,product_856,Electronics,191.15,305,2024-09-15
+857,product_857,Home & Garden,193.12,431,2024-07-28
+858,product_858,Home & Garden,94.41,269,2024-09-05
+859,product_859,Home & Garden,181.01,473,2025-02-10
+860,product_860,Home & Garden,147.11,165,2025-01-16
+861,product_861,Electronics,174.27,28,2025-02-18
+862,product_862,Home & Garden,110.76,102,2025-05-04
+863,product_863,Electronics,63.15,480,2025-06-06
+864,product_864,Electronics,161.41,153,2024-12-29
+865,product_865,Clothing,139.45,163,2025-05-30
+866,product_866,Clothing,105.56,216,2025-04-10
+867,product_867,Electronics,114.07,238,2024-10-10
+868,product_868,Electronics,184.87,449,2024-06-24
+869,product_869,Home & Garden,97.96,477,2025-02-23
+870,product_870,Home & Garden,205.75,387,2024-09-04
+871,product_871,Home & Garden,120.17,326,2024-08-03
+872,product_872,Clothing,189.89,21,2025-05-24
+873,product_873,Home & Garden,178.79,119,2024-08-22
+874,product_874,Home & Garden,99.92,81,2024-08-22
+875,product_875,Home & Garden,76.13,119,2025-03-28
+876,product_876,Clothing,117.86,379,2025-03-29
+877,product_877,Clothing,161.29,227,2025-03-20
+878,product_878,Clothing,170.34,454,2024-08-06
+879,product_879,Electronics,165.19,307,2024-08-24
+880,product_880,Clothing,131.48,301,2025-03-19
+881,product_881,Home & Garden,24.65,145,2025-01-25
+882,product_882,Home & Garden,183.01,351,2024-09-19
+883,product_883,Electronics,39.83,109,2025-06-02
+884,product_884,Home & Garden,19.81,408,2024-11-20
+885,product_885,Clothing,69.42,493,2025-05-23
+886,product_886,Home & Garden,44.22,378,2024-08-06
+887,product_887,Electronics,180.78,217,2025-03-23
+888,product_888,Electronics,121.43,318,2025-05-25
+889,product_889,Home & Garden,47.25,330,2025-02-15
+890,product_890,Clothing,89.7,457,2024-08-02
+891,product_891,Electronics,79.7,343,2024-11-03
+892,product_892,Electronics,24.01,20,2024-10-09
+893,product_893,Clothing,153.97,75,2025-04-17
+894,product_894,Electronics,54.96,255,2024-07-18
+895,product_895,Clothing,71.61,225,2025-03-05
+896,product_896,Clothing,158.25,167,2025-06-18
+897,product_897,Home & Garden,65.61,209,2024-10-21
+898,product_898,Electronics,173.79,195,2024-12-01
+899,product_899,Home & Garden,41.99,388,2025-03-30
+900,product_900,Electronics,116.04,40,2024-10-06
+901,product_901,Electronics,85.22,488,2025-04-08
+902,product_902,Home & Garden,107.39,53,2024-07-03
+903,product_903,Clothing,173.22,327,2024-06-29
+904,product_904,Electronics,105.7,100,2024-12-27
+905,product_905,Electronics,50.5,471,2025-03-02
+906,product_906,Home & Garden,140.95,62,2024-11-25
+907,product_907,Clothing,141.61,103,2024-11-03
+908,product_908,Electronics,142.51,468,2025-01-18
+909,product_909,Home & Garden,81.06,484,2024-10-05
+910,product_910,Home & Garden,160.05,103,2025-06-03
+911,product_911,Home & Garden,77.02,496,2025-06-17
+912,product_912,Electronics,89.8,85,2024-11-12
+913,product_913,Clothing,102.75,130,2025-06-11
+914,product_914,Clothing,29.81,441,2024-08-22
+915,product_915,Clothing,41.0,257,2025-05-12
+916,product_916,Clothing,93.75,262,2024-10-19
+917,product_917,Electronics,171.35,196,2025-04-28
+918,product_918,Home & Garden,105.0,106,2025-04-06
+919,product_919,Clothing,27.87,254,2025-02-21
+920,product_920,Electronics,165.49,280,2024-07-25
+921,product_921,Home & Garden,60.85,4,2024-09-08
+922,product_922,Clothing,193.45,110,2025-04-29
+923,product_923,Electronics,175.64,496,2024-08-09
+924,product_924,Electronics,179.05,111,2024-07-14
+925,product_925,Clothing,16.97,211,2024-07-24
+926,product_926,Electronics,16.19,85,2025-04-14
+927,product_927,Electronics,74.54,44,2025-04-17
+928,product_928,Clothing,202.53,343,2025-06-13
+929,product_929,Clothing,158.41,489,2024-12-11
+930,product_930,Home & Garden,175.05,397,2024-07-05
+931,product_931,Electronics,48.31,21,2024-07-23
+932,product_932,Home & Garden,192.03,51,2025-02-07
+933,product_933,Electronics,133.88,420,2025-06-04
+934,product_934,Electronics,95.24,164,2024-08-28
+935,product_935,Electronics,140.43,439,2024-11-23
+936,product_936,Electronics,57.44,308,2024-10-20
+937,product_937,Home & Garden,164.35,253,2024-09-26
+938,product_938,Home & Garden,76.37,500,2025-05-14
+939,product_939,Clothing,111.32,450,2024-08-30
+940,product_940,Home & Garden,50.97,457,2025-02-01
+941,product_941,Electronics,172.18,29,2025-01-02
+942,product_942,Electronics,30.81,353,2024-11-20
+943,product_943,Home & Garden,154.84,470,2024-10-24
+944,product_944,Clothing,167.99,304,2025-06-09
+945,product_945,Clothing,116.51,315,2025-02-23
+946,product_946,Electronics,128.91,57,2025-06-12
+947,product_947,Electronics,74.2,99,2025-03-10
+948,product_948,Home & Garden,113.11,83,2024-07-18
+949,product_949,Home & Garden,83.34,492,2025-05-26
+950,product_950,Electronics,171.64,235,2025-05-06
+951,product_951,Electronics,22.15,397,2024-07-24
+952,product_952,Clothing,190.24,491,2025-04-04
+953,product_953,Electronics,139.59,203,2024-10-27
+954,product_954,Clothing,98.6,14,2024-10-14
+955,product_955,Electronics,109.15,302,2024-11-29
+956,product_956,Electronics,149.71,282,2025-04-01
+957,product_957,Electronics,77.47,459,2024-10-25
+958,product_958,Electronics,111.82,447,2024-09-19
+959,product_959,Clothing,111.37,143,2024-12-13
+960,product_960,Home & Garden,75.41,408,2025-03-24
+961,product_961,Electronics,45.03,419,2024-07-12
+962,product_962,Home & Garden,76.05,68,2024-08-11
+963,product_963,Home & Garden,127.58,154,2025-03-17
+964,product_964,Clothing,72.47,413,2025-01-18
+965,product_965,Clothing,148.52,238,2025-03-17
+966,product_966,Electronics,38.58,95,2025-01-27
+967,product_967,Electronics,10.31,455,2025-01-03
+968,product_968,Electronics,129.73,436,2025-03-02
+969,product_969,Clothing,84.82,50,2024-07-10
+970,product_970,Electronics,145.16,466,2025-01-05
+971,product_971,Electronics,43.77,489,2024-09-24
+972,product_972,Clothing,80.02,107,2024-10-11
+973,product_973,Electronics,157.3,393,2025-04-26
+974,product_974,Clothing,145.2,457,2024-12-19
+975,product_975,Clothing,153.16,45,2024-10-30
+976,product_976,Home & Garden,201.71,401,2025-01-30
+977,product_977,Electronics,111.07,391,2025-05-29
+978,product_978,Home & Garden,10.12,186,2025-04-18
+979,product_979,Clothing,184.18,218,2025-03-28
+980,product_980,Electronics,173.0,310,2024-10-31
+981,product_981,Home & Garden,197.33,409,2024-08-13
+982,product_982,Home & Garden,97.65,430,2024-12-01
+983,product_983,Home & Garden,35.44,183,2024-12-13
+984,product_984,Clothing,43.46,25,2025-06-17
+985,product_985,Electronics,73.51,76,2024-10-11
+986,product_986,Home & Garden,181.23,144,2025-02-10
+987,product_987,Clothing,76.77,359,2025-04-07
+988,product_988,Electronics,15.07,372,2024-07-10
+989,product_989,Clothing,59.36,123,2025-04-18
+990,product_990,Electronics,202.84,473,2024-07-23
+991,product_991,Clothing,88.51,169,2024-10-19
+992,product_992,Electronics,153.74,444,2025-02-05
+993,product_993,Home & Garden,174.49,278,2025-02-03
+994,product_994,Home & Garden,197.0,118,2024-09-02
+995,product_995,Clothing,52.82,334,2024-08-13
+996,product_996,Electronics,42.37,490,2024-10-31
+997,product_997,Home & Garden,77.92,33,2024-12-13
+998,product_998,Clothing,84.53,478,2024-10-12
+999,product_999,Home & Garden,58.71,216,2025-05-02
+1000,product_1000,Clothing,74.21,359,2024-08-31
