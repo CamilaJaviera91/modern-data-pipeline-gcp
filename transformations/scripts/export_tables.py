@@ -33,6 +33,7 @@ client = gspread.authorize(creds)
 # Create new spreadsheet
 spreadsheet = client.create("DBT Exported Tables")
 spreadsheet.share('', perm_type='anyone', role='writer')  # Optional: public access
+print(f"🔗 Google Sheet created: {spreadsheet.url}")
 
 # Get the list of tables in the schema
 with conn.cursor() as cur:
