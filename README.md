@@ -37,7 +37,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 - [X] Extracts data from a **PostgreSQL** source
 - [X] Enriches it with **exchange rate data** from an external API
 - [X] Loads the results to **CSV files** and **Google Sheets**
-- [ ] Optionally pushes transformed data to **BigQuery**
+- [X] Optionally pushes transformed data to **BigQuery**
 - [ ] Includes **data quality checks** and **logging**
 - [ ] Modular structure: `extract`, `transform`, `load`, `validate`, `notify`
 - [ ] Uses **Docker + Docker Compose** for local orchestration
