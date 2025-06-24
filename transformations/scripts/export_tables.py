@@ -2,6 +2,9 @@ import os
 import pandas as pd
 import psycopg2
 from dotenv import load_dotenv
+import gspread
+from gspread_dataframe import set_with_dataframe
+from oauth2client.service_account import ServiceAccountCredentials
 
 load_dotenv()
 
