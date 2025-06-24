@@ -28,6 +28,10 @@ creds_path = os.getenv("GOOGLE_SHEETS_CREDS_PATH")
 creds = ServiceAccountCredentials.from_json_keyfile_name(creds_path, scope)
 client = gspread.authorize(creds)
 
+# Create new spreadsheet
+spreadsheet = client.create("DBT Exported Tables")
+spreadsheet.share('', perm_type='anyone', role='writer')  # Optional: public access
+
 # Get the list of tables in the schema
 with conn.cursor() as cur:
     cur.execute("""
