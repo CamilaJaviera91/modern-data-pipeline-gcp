@@ -22,6 +22,12 @@ schema = os.getenv("DBT_SCHEMA")
 # Create 'data' folder if it doesn't exist
 os.makedirs("data", exist_ok=True)
 
+# Set up Google Sheets API
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+creds_path = os.getenv("GOOGLE_SHEETS_CREDS_PATH")
+creds = ServiceAccountCredentials.from_json_keyfile_name(creds_path, scope)
+client = gspread.authorize(creds)
+
 # Get the list of tables in the schema
 with conn.cursor() as cur:
     cur.execute("""
