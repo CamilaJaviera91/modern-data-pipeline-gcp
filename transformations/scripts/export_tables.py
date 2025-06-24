@@ -50,5 +50,10 @@ for (table_name,) in tables:
     df.to_csv(csv_path, index=False)
     print(f"Saved {csv_path}")
 
+    # Upload to Google Sheets
+    worksheet = spreadsheet.add_worksheet(title=table_name, rows=str(len(df)+1), cols=str(len(df.columns)))
+    set_with_dataframe(worksheet, df)
+    print(f"✅ Uploaded to Google Sheets: {table_name}")
+
 conn.close()
 print("✅ Export of all tables completed.")
