@@ -25,6 +25,8 @@ os.makedirs("data", exist_ok=True)
 # Set up Google Sheets API
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 creds_path = os.getenv("GOOGLE_CREDENTIALS_PATH")
+if not creds_path:
+    raise ValueError("❌ GOOGLE_SHEETS_CREDS_PATH is not set. Check your .env file.")
 creds = ServiceAccountCredentials.from_json_keyfile_name(creds_path, scope)
 client = gspread.authorize(creds)
 
