@@ -50,7 +50,9 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ```
 .
-├──transformations
+├── .venv
+├── logs
+├── transformations
 │   ├── analyses
 │   ├── data
 │   │   ├── mock_order_items.csv
