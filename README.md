@@ -52,12 +52,12 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 .
 ├── .venv                               # Virtual environment 
 ├── logs
-├── transformations
+├── transformations                     # Data transformation logic
 │   ├── .dbt
 │   │   ├── users.yml
-│   │   └── profiles.yml
+│   │   └── profiles.yml                # DBT profiles (often symlinked or referenced)
 │   ├── analyses
-│   ├── data
+│   ├── data                            # CSV exports
 │   │   ├── mock_order_items.csv
 │   │   ├── mock_orders.csv
 │   │   ├── mock_products.csv
@@ -65,14 +65,14 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   │   └── mock_users.csv
 │   ├── logs
 │   ├── macros
-│   ├── models
+│   ├── models                          # DBT models
 │   │   └── mock
 │   │       ├── mock_order_items.sql
 │   │       ├── mock_orders.sql
 │   │       ├── mock_products.sql
 │   │       ├── mock_users.sql
 │   │       └── schema.yml
-│   ├── scripts
+│   ├── scripts                         # Python scripts for pipeline steps
 │   │   ├── export_tables.py
 │   │   ├── load_exchange_rates.py
 │   │   └── push_to_bigquery.py
@@ -80,11 +80,11 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   ├── snapshots
 │   ├── target
 │   ├── tests
-│   ├── utils
+│   ├── utils                           # Custom utility functions
 |   |   └── quality_checks.py
 │   ├── .env
 │   ├── .gitignore
-│   ├── dbt_project.yml
+│   ├── dbt_project.yml                 # DBT project config
 │   ├── README.md
 │   ├── requirement-dev.txt             # Python dependencies
 │   ├── requirements.txt                # Python dependencies
