@@ -45,6 +45,43 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ---
 
+## 📁 `modern-data-pipeline-gcp/transformations` – Project Root
+
+```
+.
+├── analyses
+├── data
+│   ├── mock_order_items.csv
+│   ├── mock_orders.csv
+│   ├── mock_products.csv
+│   ├── mock_rates.csv
+│   └── mock_users.csv
+├── dbt_project.yml
+├── macros
+├── models
+│   └── mock
+│       ├── mock_order_items.sql
+│       ├── mock_orders.sql
+│       ├── mock_products.sql
+│       ├── mock_users.sql
+│       └── schema.yml
+├── README.md
+├── requirement-dev.txt
+├── requirements.txt
+├── run.sh
+├── scripts
+│   ├── export_tables.py
+│   ├── load_exchange_rates.py
+│   └── push_to_bigquery.py
+├── seeds
+├── snapshots
+├── tests
+└── utils
+    └── quality_checks.py
+```
+
+---
+
 ## 🛠️ Tech Stack
 
 - 🌀 **Airflow** – DAG orchestration & scheduling
