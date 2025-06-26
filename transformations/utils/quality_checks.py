@@ -11,3 +11,8 @@ def check_no_nulls(df: pd.DataFrame, columns: list, table_name: str):
     if issues:
         raise ValueError(f"❌ Null check failed for {table_name}: " + ", ".join(issues))
     return f"✅ No nulls in columns {columns} for table '{table_name}'."
+
+def check_unique(df: pd.DataFrame, column: str, table_name: str):
+    if df[column].duplicated().any():
+        raise ValueError(f"❌ Duplicate values in '{column}' of table '{table_name}'.")
+    return f"✅ Column '{column}' in '{table_name}' is unique."
