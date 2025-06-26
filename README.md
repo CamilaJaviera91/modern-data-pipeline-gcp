@@ -53,6 +53,9 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 ├── .venv
 ├── logs
 ├── transformations
+│   ├── .dbt
+│   │   ├── users.yml
+│   │   └── profiles.yml
 │   ├── analyses
 │   ├── data
 │   │   ├── mock_order_items.csv
