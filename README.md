@@ -50,7 +50,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ```
 .
-├── .venv
+├── .venv                               # Virtual environment 
 ├── logs
 ├── transformations
 │   ├── .dbt
@@ -86,12 +86,12 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   ├── .gitignore
 │   ├── dbt_project.yml
 │   ├── README.md
-│   ├── requirement-dev.txt
-│   ├── requirements.txt
+│   ├── requirement-dev.txt             # Python dependencies
+│   ├── requirements.txt                # Python dependencies
 │   └── run.sh
 ├── .gitignore
 ├── LICENSE
-└── README.md
+└── README.md                           # Project documentation
 ```
 
 ---
