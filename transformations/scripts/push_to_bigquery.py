@@ -1,11 +1,15 @@
+import sys
 import os
 import pandas as pd
 import psycopg2
 from dotenv import load_dotenv
 from pandas_gbq import to_gbq
 import logging
-from transformations.utils.quality_checks import check_not_empty, check_no_nulls, check_unique
 import warnings
+
+# Add the root path to allow relative imports
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from utils.quality_checks import check_not_empty, check_no_nulls, check_unique
 
 warnings.filterwarnings("ignore", category=UserWarning, module="pandas_gbq")
 
