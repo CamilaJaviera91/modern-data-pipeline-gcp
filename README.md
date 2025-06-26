@@ -64,7 +64,6 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   │   ├── mock_rates.csv
 │   │   └── mock_users.csv
 │   ├── logs
-│   ├── dbt_project.yml
 │   ├── macros
 │   ├── models
 │   │   └── mock
@@ -73,10 +72,6 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   │       ├── mock_products.sql
 │   │       ├── mock_users.sql
 │   │       └── schema.yml
-│   ├── README.md
-│   ├── requirement-dev.txt
-│   ├── requirements.txt
-│   ├── run.sh
 │   ├── scripts
 │   │   ├── export_tables.py
 │   │   ├── load_exchange_rates.py
@@ -84,8 +79,14 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   ├── seeds
 │   ├── snapshots
 │   ├── tests
-└── └── utils
-        └── quality_checks.py
+│   ├── utils
+|   |   └── quality_checks.py
+│   ├── dbt_project.yml
+│   ├── README.md
+│   ├── requirement-dev.txt
+│   ├── requirements.txt
+└── └── run.sh
+
 ```
 
 ---
