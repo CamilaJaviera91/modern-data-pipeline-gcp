@@ -63,6 +63,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   │   ├── mock_products.csv
 │   │   ├── mock_rates.csv
 │   │   └── mock_users.csv
+│   ├── logs
 │   ├── dbt_project.yml
 │   ├── macros
 │   ├── models
