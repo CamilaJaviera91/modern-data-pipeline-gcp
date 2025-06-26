@@ -88,8 +88,10 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   ├── README.md
 │   ├── requirement-dev.txt
 │   ├── requirements.txt
-└── └── run.sh
-
+│   └── run.sh
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
