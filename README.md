@@ -5,7 +5,7 @@
 - [🔍 Description](#-description)
 - [🚀 Project Overview](#-overview)
     - [🔄 Pipeline Highlights](#-pipeline-highlights)
-- [📁 `modern-data-pipeline-gcp/transformations` – Project Root](#-modern-data-pipeline-gcptransformations--project-root)
+- [📁 `modern-data-pipeline-gcp` – Project Root](#-modern-data-pipeline-gcptransformations--project-root)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Getting Started](#-getting-started)
     - [✅ Prerequisites](#-prerequisites)
@@ -46,7 +46,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ---
 
-## 📁 `modern-data-pipeline-gcp/transformations` – Project Root
+## 📁 `modern-data-pipeline-gcp` – Project Root
 
 ```
 .
