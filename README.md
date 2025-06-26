@@ -5,6 +5,7 @@
 - [🔍 Description](#-description)
 - [🚀 Project Overview](#-overview)
     - [🔄 Pipeline Highlights](#-pipeline-highlights)
+- [📁 `modern-data-pipeline-gcp/transformations` – Project Root](#-modern-data-pipeline-gcptransformations--project-root)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Getting Started](#-getting-started)
     - [✅ Prerequisites](#-prerequisites)
