@@ -78,9 +78,12 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 │   │   └── push_to_bigquery.py
 │   ├── seeds
 │   ├── snapshots
+│   ├── target
 │   ├── tests
 │   ├── utils
 |   |   └── quality_checks.py
+│   ├── .env
+│   ├── .gitignore
 │   ├── dbt_project.yml
 │   ├── README.md
 │   ├── requirement-dev.txt
