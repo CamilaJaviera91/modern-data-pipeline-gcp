@@ -18,6 +18,7 @@
     - [✅ Prerequisites](#-prerequisites)
     - [⚙️ Local Setup](#️-local-setup)
     - [🧭 Step-by-step guide to create a virtual environment in VS Code](#-step-by-step-guide-to-create-a-virtual-environment-in-vs-code)
+    - [🛠️ Create `.env` file](#️-create-env-file)
     - [⚙️ Install Requirements ](#️-install-requirements)
     - [🚀 How to run the mock models](#-how-to-run-the-mock-models)
     - [🛠️ Additional notes](#️-additional-notes)
@@ -194,7 +195,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### 🛠️ Create .env file 
+#### 🛠️ Create `.env` file 
 
 It should contain variables like:
 
