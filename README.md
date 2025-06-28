@@ -194,6 +194,23 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+#### Create .env file 
+
+It should contain variables like:
+
+```
+DBT_HOST=host
+DBT_USER=user_name
+DBT_PASSWORD=password
+DBT_DBNAME=bd_name
+DBT_SCHEMA=schema_name
+DBT_PORT=0000
+EXCHANGE_API_KEY=000000000000000
+GOOGLE_CREDENTIALS_PATH=/your/path/file.json
+BQ_PROJECT_ID=id
+BQ_DATASET=data_set_name
+```
+
 #### 📦 Install Requirements
 
 ```
