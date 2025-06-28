@@ -270,6 +270,14 @@ python transformations/scripts/load_exchange_rates.py      # 🔌 loads exchange
 - **Unit tests** for custom Python functions in `/scripts` or `/dags`
 - **CI pipeline** (planned): Linting, formatting, DAG validation, DBT compile
 
+Run tests to validate your pipeline:
+
+```
+./run.sh test
+# or
+dbt test --select mock
+```
+
 ---
 
 ## 📡 Monitoring & Logging
