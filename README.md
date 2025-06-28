@@ -297,9 +297,31 @@ dbt test --select mock
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing Guidelines
 
-Contributions, issues, and feature requests are welcome!  
+Thank you for your interest in contributing to this project!
+
+#### 🧰 How to Contribute
+
+1. **Fork** the repository.
+2. **Clone** your fork:  
+   `git clone https://github.com/<your-username>/modern-data-pipeline-gcp.git`
+3. Create a new branch:  
+   `git checkout -b feature/your-feature-name`
+4. Make your changes and **commit**:  
+   `git commit -m "Add new feature"`
+5. Push to your fork:  
+   `git push origin feature/your-feature-name`
+6. Submit a **pull request** to the `main` branch.
+
+#### 🧪 Testing
+
+Please run tests locally before submitting your PR:
+
+```
+pytest scripts/
+dbt test
+```
 
 ---
 
