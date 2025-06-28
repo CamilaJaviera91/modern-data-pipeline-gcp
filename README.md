@@ -194,7 +194,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### Create .env file 
+#### 🛠️ Create .env file 
 
 It should contain variables like:
 
