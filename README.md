@@ -1,5 +1,12 @@
 # 🌐 Modern Data Pipeline GCP
 
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Airflow](https://img.shields.io/badge/Airflow-2.x-blue)
+![DBT](https://img.shields.io/badge/DBT-1.9.x-orange)
+![GCP](https://img.shields.io/badge/GCP-ready-green)
+
+---
+
 ## 📚 Table of Contents
 
 - [🔍 Description](#-description)
