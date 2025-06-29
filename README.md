@@ -330,7 +330,7 @@ dbt test
 
 ## 🧰 Resources:
 
-### 🧱 DBT
+### 🧱 DBT:
 
 - [DBT Docs](https://docs.getdbt.com/docs/introduction)
 - [DBT QA](https://discourse.getdbt.com/)
@@ -340,7 +340,7 @@ dbt test
 
 ---
 
-## 👩‍💻 Author
+## 👩‍💻 Author:
 
 **Camila Javiera Muñoz Navarro**  
 Data Engineer & Analyst | BigQuery | Airflow | Python | GCP  
