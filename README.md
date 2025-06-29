@@ -246,13 +246,13 @@ dbt init transformations
 - To run the models inside the `mock` directory, use the following command:
 
 ```
-python transformations/scripts/load_exchange_rates.py      # 🔌 loads exchange rates
-./run.sh run --select enrich_exchange_rates                # 🛠️ transforms data
+python transformations/scripts/load_exchange_rates.py
+./run.sh run --select enrich_exchange_rates              
 ```
 
 - This command runs DBT and processes only the models located in the `models/mock` folder.
 
-#### 🛠️ Additional notes
+#### 🛠️ Additional notes:
 
 - Make sure you have a `.env` file with the necessary environment variables to connect to the database.
 
@@ -266,7 +266,7 @@ python transformations/scripts/load_exchange_rates.py      # 🔌 loads exchange
 
 ---
 
-## 🧪 Testing
+## 🧪 Testing:
 
 - **DBT tests** for schema, uniqueness, and relationships
 - **Airflow DAG validation**: `airflow dags list`, `airflow dags test`
