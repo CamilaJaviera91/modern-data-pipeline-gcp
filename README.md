@@ -197,7 +197,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### 🛠️ Create `.env` file 
+#### 🛠️ Create `.env` file:
 
 It should contain variables like:
 
@@ -214,7 +214,7 @@ BQ_PROJECT_ID=id
 BQ_DATASET=data_set_name
 ```
 
-#### 📦 Install Requirements
+#### 📦 Install Requirements:
 
 ```
 pip install -r requirements.txt
