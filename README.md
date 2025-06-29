@@ -283,7 +283,7 @@ dbt test --select mock
 
 ---
 
-## 📡 Monitoring & Logging
+## 📡 Monitoring & Logging:
 
 - Airflow task logs viewable via the web UI
 - Custom loggers for API responses and ETL steps
@@ -291,7 +291,7 @@ dbt test --select mock
 
 ---
 
-## 🗺️ Roadmap
+## 🗺️ Roadmap:
 
 - [ ] Add unit tests for transformation logic
 - [ ] Set up CI/CD with GitHub Actions
@@ -300,7 +300,7 @@ dbt test --select mock
 
 ---
 
-## 🤝 Contributing Guidelines
+## 🤝 Contributing Guidelines:
 
 Thank you for your interest in contributing to this project!
 
