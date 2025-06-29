@@ -227,7 +227,7 @@ pip install -r requirements-dev.txt
 sudo systemctl start postgresql
 ```
 
-#### 🆕 Initialize Project
+#### 🆕 Initialize Project:
 
 ```
 dbt init transformations
@@ -241,7 +241,7 @@ dbt init transformations
 
 - This will create a transformations/ folder with all the base files.
 
-#### 🚀 How to run the mock models
+#### 🚀 How to run the mock models:
 
 - To run the models inside the `mock` directory, use the following command:
 
