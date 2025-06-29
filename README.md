@@ -106,7 +106,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack:
 
 - 🌀 **Airflow** – DAG orchestration & scheduling
 
