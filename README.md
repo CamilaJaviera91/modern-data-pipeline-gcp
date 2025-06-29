@@ -56,7 +56,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ---
 
-## 📁 `modern-data-pipeline-gcp` – Project Root
+## 📁 `modern-data-pipeline-gcp` – Project Root:
 
 ```
 .
