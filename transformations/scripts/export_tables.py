@@ -68,5 +68,4 @@ def export_all_tables(schema: str = None, spreadsheet_title: str = "DBT Exported
         print(f"✅ Uploaded to Google Sheets: {table_name}")
 
     conn.close()
-    print("✅ Export of all tables completed.")
-    return spreadsheet.url  # Optional: return link
+    print(f"✅ Export of all tables completed into {spreadsheet.url}")
