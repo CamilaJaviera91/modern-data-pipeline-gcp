@@ -153,7 +153,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ---
 
-#### ⚙️ Local Setup
+#### ⚙️ Local Setup:
 
 - Clone the repo
 
