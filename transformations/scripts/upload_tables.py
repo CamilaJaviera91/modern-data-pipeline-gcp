@@ -8,5 +8,3 @@ def run_dbt_mock_models():
     except subprocess.CalledProcessError as e:
         print(f"❌ DBT command failed with exit code {e.returncode}")
         raise
-    
-run_dbt_mock_models()
