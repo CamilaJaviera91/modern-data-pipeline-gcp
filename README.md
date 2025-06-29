@@ -40,7 +40,7 @@ A production-grade, modular ETL pipeline built with **Apache Airflow**, integrat
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Project Overview:
 
 This repository contains an end-to-end ETL workflow designed for scalability, maintainability, and cloud readiness. It showcases how to orchestrate data pipelines using Airflow, enrich and transform data with DBT, and deploy the solution using containerized environments and CI/CD pipelines.
 
