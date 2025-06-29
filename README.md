@@ -142,9 +142,9 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start:
 
-#### ✅ Prerequisites
+#### ✅ Prerequisites:
 
 - Docker & Docker Compose
 - Python 3.9+
