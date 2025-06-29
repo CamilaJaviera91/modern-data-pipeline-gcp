@@ -50,7 +50,7 @@ This repository contains an end-to-end ETL workflow designed for scalability, ma
 - [X] Loads the results to **CSV files** and **Google Sheets**
 - [X] Optionally pushes transformed data to **BigQuery**
 - [X] Includes **data quality checks** and **logging**
-- [ ] Modular structure: `extract`, `transform`, `load`, `validate`, `notify`
+- [X] Modular structure: `extract`, `transform`, `load`, `validate`, `notify`
 - [ ] Uses **Docker + Docker Compose** for local orchestration
 - [ ] Ready for deployment on **GCP Cloud Composer** or similar environments
 
