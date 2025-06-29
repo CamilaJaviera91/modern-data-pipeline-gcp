@@ -163,7 +163,7 @@ git clone https://github.com/CamilaJaviera91/modern-data-pipeline-gcp.git
 cd modern-data-pipeline-gcp
 ```
 
-#### 🧭 Step-by-step guide to create a virtual environment in VS Code
+#### 🧭 Step-by-step guide to create a virtual environment in VS Code:
 
 1. Open the command palette
 Press `Ctrl + Shift + P` to open the command palette.
