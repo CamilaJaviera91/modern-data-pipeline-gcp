@@ -304,7 +304,7 @@ dbt test --select mock
 
 Thank you for your interest in contributing to this project!
 
-#### 🧰 How to Contribute
+#### 🧰 How to Contribute:
 
 1. **Fork** the repository.
 2. **Clone** your fork:  
@@ -317,7 +317,7 @@ Thank you for your interest in contributing to this project!
    `git push origin feature/your-feature-name`
 6. Submit a **pull request** to the `main` branch.
 
-#### 🧪 Testing
+#### 🧪 Testing:
 
 Please run tests locally before submitting your PR:
 
