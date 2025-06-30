@@ -12,6 +12,7 @@
 - [🔍 Description](#-description)
 - [🚀 Project Overview](#-overview)
     - [🔄 Pipeline Highlights](#-pipeline-highlights)
+    - [✅ Features](#-features)
 - [📁 `modern-data-pipeline-gcp` – Project Root](#-modern-data-pipeline-gcptransformations--project-root)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Getting Started](#-getting-started)
