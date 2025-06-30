@@ -26,6 +26,7 @@
         - [6. Run Pipeline](#6-run-pipeline)
 - [🧪 Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
+- [🚀 CI/CD](#-cicd)
 - [🗺️ Roadmap](#️-roadmap)
 - [🤝 Contributing Guidelines](#-contributing-guidelines)
     - [🧰 How to Contribute](#-how-to-contribute)
@@ -225,6 +226,16 @@ dbt test --select mock
 - Airflow task logs viewable via the web UI
 - Custom loggers for API responses and ETL steps
 - Optionally integrates with **Stackdriver Logging** and **Alerting**
+
+---
+
+## 🚀 CI/CD
+
+- GitHub Actions triggers include:
+  - Linting + formatting checks
+  - DBT compilation and tests
+  - Docker image builds
+  - Deployment to Cloud Composer (planned)
 
 ---
 
