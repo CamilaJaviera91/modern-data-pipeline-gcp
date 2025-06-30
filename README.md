@@ -298,3 +298,8 @@ Data Engineer & Analyst | BigQuery | Airflow | Python | GCP
 ---
 
 > ⭐ If you find this project useful, give it a ⭐️ and share your feedback or ideas in [Issues](https://github.com/CamilaJaviera91/modern-data-pipeline-gcp/issues)!
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
