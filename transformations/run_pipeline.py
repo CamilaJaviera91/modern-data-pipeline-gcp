@@ -4,15 +4,21 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
-from scripts.upload_tables import run_dbt_mock_models as upload
-from scripts.export_tables import export_all_tables as export
 from scripts.load_exchange_rates import run_exchange_rates_load as rates
+from scripts.upload_tables import run_dbt_mock_models as upload
+from scripts.export_csv import export_tables_to_csv as csv
+from scripts.export_sheets import upload_csvs_to_google_sheets as sheets
+from scripts.push_to_bigquery import load_tables_to_bigquery as bigquery
 
 # Call when needed in your DAG or script
 if __name__ == "__main__":
     
     print("🚀 Starting pipeline...")
-    upload()
-    export()
+
     rates()
+    upload()
+    csv()
+    sheets()
+    bigquery()
+    
     print("✅ Pipeline completed.")
