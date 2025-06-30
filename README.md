@@ -151,105 +151,21 @@ git clone https://github.com/CamilaJaviera91/modern-data-pipeline-gcp.git
 cd modern-data-pipeline-gcp
 ```
 
-#### 🧭 Step-by-step guide to create a virtual environment in VS Code:
+### 2. Environment Setup
 
-1. Open the command palette
-Press `Ctrl + Shift + P` to open the command palette.
-
-2. Select the Python interpreter
-Type and select **"Python: Select Interpreter"**.
-
-3. Create a virtual environment
-
-    - Click on "+ Create Virtual Environment..."
-
-    - Choose the environment type: select "Venv"
-
-    - Select the Python version you want to use (e.g., Python 3.10.17)
-
-4. Wait for the virtual environment to be created
-VS Code will automatically create a `.venv` folder in your project and configure the environment.
-
-5. Activate the virtual environment
-Once it's created, we can activate it.
+Copy `.env.example` to `.env` and supply:
 
 ```
-source .venv/bin/activate
-```
-
-- (Opcional) If you don't want to create the enviroment in VSCode you can use this script:
-
-```
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-#### 🛠️ Create `.env` file:
-
-It should contain variables like:
-
-```
-DBT_HOST=host
-DBT_USER=user_name
-DBT_PASSWORD=password
-DBT_DBNAME=bd_name
-DBT_SCHEMA=schema_name
-DBT_PORT=0000
-EXCHANGE_API_KEY=000000000000000
-GOOGLE_CREDENTIALS_PATH=/your/path/file.json
-BQ_PROJECT_ID=id
-BQ_DATASET=data_set_name
-```
-
-#### 📦 Install Requirements:
-
-```
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
-```
-
-#### 🐘 Start Postgres Services:
-
-```
-sudo systemctl start postgresql
-```
-
-#### 🆕 Initialize Project:
-
-```
-dbt init transformations
-```
-
-- DBT will ask you a few questions:
-
-    - project name: (you can keep transformations)
-
-    - profile: use the default one, or configure it later
-
-- This will create a transformations/ folder with all the base files.
-
-#### 🚀 How to run the mock models:
-
-- To run the models inside the `mock` directory, use the following command:
-
-```
-python transformations/scripts/load_exchange_rates.py
-./run.sh run --select enrich_exchange_rates              
-```
-
-- This command runs DBT and processes only the models located in the `models/mock` folder.
-
-#### 🛠️ Additional notes:
-
-- Make sure you have a `.env` file with the necessary environment variables to connect to the database.
-
-- The `run.sh` script automatically loads these variables and runs DBT with the proper configuration.
-
-- To run all models, simply use:
-
-```
-./run.sh run
+DBT_HOST=...
+DBT_USER=...
+DBT_PASSWORD=...
+DBT_DBNAME=...
+DBT_SCHEMA=...
+DBT_PORT=...
+EXCHANGE_API_KEY=...
+GOOGLE_CREDENTIALS_PATH=...
+BQ_PROJECT_ID=...
+BQ_DATASET=...
 ```
 
 ---
