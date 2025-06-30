@@ -140,15 +140,13 @@ This repository delivers an end-to-end data pipeline with:
 - PostgreSQL instance for source data  
 - `make` (optional, if using Makefile shortcuts)
 
-
 ---
 
-#### ⚙️ Local Setup:
+#### ⚙️ Setup & Usage
 
-- Clone the repo
+### 1. Clone & Navigate
 
 ```
-# Clone the repository
 git clone https://github.com/CamilaJaviera91/modern-data-pipeline-gcp.git
 cd modern-data-pipeline-gcp
 ```
