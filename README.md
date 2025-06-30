@@ -23,6 +23,7 @@
         - [3. Install Locally (optional)](#3-install-locally-optional)
         - [4. Start Services (Postgres + Airflow)](#4-start-services-postgres--airflow)
         - [5. Initialize DBT](#5-initialize-dbt)
+        - [6. Run Pipeline](#6-run-pipeline)
 - [🧪 Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🗺️ Roadmap](#️-roadmap)
@@ -189,6 +190,17 @@ docker-compose up --build
 cd transformations
 dbt init
 ```
+
+#### 6. Run Pipeline
+For a daily production run:
+```
+./run.sh run
+```
+Mock mode only:
+```
+./run.sh run --select enrich_exchange_rates
+```
+
 ---
 
 ## 🧪 Testing:
