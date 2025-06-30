@@ -45,14 +45,13 @@ A production-grade, modular ETL workflow built with Apache Airflow, DBT, and Goo
 This repository contains an end-to-end ETL workflow designed for scalability, maintainability, and cloud readiness. It showcases how to orchestrate data pipelines using Airflow, enrich and transform data with DBT, and deploy the solution using containerized environments and CI/CD pipelines.
 
 ### 🔄 Pipeline Highlights:
-- [X] Extracts data from a **PostgreSQL** source
-- [X] Enriches it with **exchange rate data** from an external API
-- [X] Loads the results to **CSV files** and **Google Sheets**
-- [X] Optionally pushes transformed data to **BigQuery**
-- [X] Includes **data quality checks** and **logging**
-- [X] Modular structure: `extract`, `transform`, `load`, `validate`, `notify`
-- [ ] Uses **Docker + Docker Compose** for local orchestration
-- [ ] Ready for deployment on **GCP Cloud Composer** or similar environments
+
+This repository delivers an end-to-end data pipeline with:
+- **Extraction** from a PostgreSQL source and external exchange rate API  
+- **Enrichment** and **Transformation** using DBT models  
+- **Loading** to CSV, Google Sheets, and optionally to BigQuery  
+- **Orchestration** via Airflow DAGs — modular and containerized  
+- Built-in **data quality checks**, logging, and alerts
 
 ---
 
