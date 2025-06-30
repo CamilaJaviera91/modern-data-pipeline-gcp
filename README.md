@@ -177,6 +177,18 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
 
+### 4. Start Services (Postgres + Airflow)
+
+```
+docker-compose up --build
+```
+
+### 5. Initialize DBT
+
+```
+cd transformations
+dbt init
+```
 ---
 
 ## 🧪 Testing:
