@@ -132,12 +132,14 @@ This repository delivers an end-to-end data pipeline with:
 
 ## 🚀 Quick Start:
 
-#### ✅ Prerequisites:
+## 📋 Requirements
 
-- Docker & Docker Compose
-- Python 3.9+
-- `make` (optional, for using the Makefile)
-- GCP account, permissions, CLI tools, credentials.
+- Docker & Docker Compose  
+- Python 3.9+ (for local development)  
+- GCP project with access to BigQuery, Sheets API, and Secret Manager  
+- PostgreSQL instance for source data  
+- `make` (optional, if using Makefile shortcuts)
+
 
 ---
 
