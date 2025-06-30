@@ -116,37 +116,16 @@ This repository delivers an end-to-end data pipeline with:
 
 ## 🛠️ Tech Stack:
 
-- 🌀 **Airflow** – DAG orchestration & scheduling
-
-    > Apache Airflow is used to define, schedule, and monitor workflows as Directed Acyclic Graphs (DAGs). Each task (e.g., extract, transform, load) runs in sequence or parallel depending on dependencies. In your pipeline, it can automate running Python scripts for ingestion, transformation, and loading at specific intervals (e.g., daily at 1am).
-
-- 🧱 **DBT** – SQL transformations inside BigQuery
-    
-    > DBT (Data Build Tool) enables modular, version-controlled data transformations using SQL. It runs inside your warehouse (e.g., BigQuery), letting you build models with dependencies, test logic, and document results. Ideal for transforming raw data into analytics-ready datasets in BigQuery.
-
-- ☁️ **GCP** – BigQuery 📈, Sheets API 📄, Secret Manager 🔐
-
-    > BigQuery: Serverless data warehouse for fast querying and analytics.
-
-    > Google Sheets API: Used to export or update transformed data directly into shared spreadsheets for reporting or stakeholder access.
-
-    > Secret Manager: Securely stores credentials and API keys (e.g., DB passwords, service account tokens) for safe access from scripts or containers.
-
-- 🐳 **Docker** – Containerized development environments
-
-    > Docker ensures consistent, reproducible environments for running your pipeline—locally or in the cloud. It packages dependencies, Python versions, and configuration into a container image, avoiding "works on my machine" issues.
-
-- 🐍 **Python** – Core logic, APIs, transformations
-    
-    > Python powers the core business logic of the pipeline—API ingestion, data transformation (Pandas or PySpark), error handling, logging, and exporting results. It's also used for integrating with GCP, PostgreSQL, and 3rd-party APIs.
-
-- 🐘 **PostgreSQL** – Source database
-
-    > PostgreSQL is the primary data source for the pipeline. Python scripts connect via SQLAlchemy or psycopg2 to extract records, which are then cleaned and loaded into BigQuery or other destinations.
-
-- 🤖 **CI/CD** – GitHub Actions automation
-
-    > GitHub Actions will enable automated workflows for testing, linting, building, and deploying pipeline components on every code change. You can set up jobs to run Pytest, build Docker images, deploy Airflow DAGs, or validate DBT models on push or pull requests.
+| Layer            | Technologies                                  |
+|------------------|-----------------------------------------------|
+| Orchestration    | Airflow on Docker (locally) or Cloud Composer |
+| Transformation   | DBT models deployed to BigQuery               |
+| Source data      | PostgreSQL                                    |
+| Destinations     | CSV, Google Sheets, BigQuery                  |
+| Cloud infra      | GCP: BigQuery, Sheets API, Secret Manager     |
+| Containerization | Docker & Docker Compose                       |
+| Language         | Python                                        |
+| CI/CD            | GitHub Actions                                |
 
 ---
 
