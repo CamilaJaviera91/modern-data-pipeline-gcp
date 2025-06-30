@@ -40,7 +40,3 @@ def export_tables_to_csv(schema: str = None):
 
     conn.close()
     print("✅ CSV export completed.")
-
-
-if __name__ == "__main__":
-    export_tables_to_csv()
