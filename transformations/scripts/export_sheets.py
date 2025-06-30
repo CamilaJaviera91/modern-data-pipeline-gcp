@@ -40,7 +40,3 @@ def upload_csvs_to_google_sheets(folder="data", spreadsheet_title="DBT Exported 
             print(f"✅ Uploaded `{filename}` to Google Sheets")
 
     print(f"✅ All CSVs uploaded: {spreadsheet.url}")
-
-
-if __name__ == "__main__":
-    upload_csvs_to_google_sheets()
