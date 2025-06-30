@@ -168,6 +168,15 @@ BQ_PROJECT_ID=...
 BQ_DATASET=...
 ```
 
+### 3. Install Locally (optional)
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+```
+
 ---
 
 ## 🧪 Testing:
