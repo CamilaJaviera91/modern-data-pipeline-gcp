@@ -241,10 +241,11 @@ dbt test --select mock
 
 ## 🗺️ Roadmap:
 
-- [ ] Add unit tests for transformation logic
-- [ ] Set up CI/CD with GitHub Actions
-- [ ] Auto-deploy to Cloud Composer
-- [ ] Add support for other destinations (e.g., Snowflake, S3)
+- ✅ Initialize core modular pipeline  
+- 🧪 Add unit tests for Python & DBT logic  
+- 🔁 Implement full CI/CD with automated deploy to GCP  
+- 🔄 Extend support to additional sinks (Snowflake, S3, etc.)  
+- ⏰ Enable scheduling on Cloud Composer
 
 ---
 
