@@ -15,8 +15,8 @@
     - [✅ Features](#-features)
 - [📁 `modern-data-pipeline-gcp` – Project Root](#-modern-data-pipeline-gcptransformations--project-root)
 - [🛠️ Tech Stack](#️-tech-stack)
-- [🚀 Getting Started](#-getting-started)
-    - [✅ Prerequisites](#-prerequisites)
+- [🚀 Quick Start](#-quick-start)
+    - [📋 Requirements](#-requirements)
     - [⚙️ Local Setup](#️-local-setup)
     - [🧭 Step-by-step guide to create a virtual environment in VS Code](#-step-by-step-guide-to-create-a-virtual-environment-in-vs-code)
     - [🛠️ Create `.env` file](#️-create-env-file)
@@ -132,7 +132,7 @@ This repository delivers an end-to-end data pipeline with:
 
 ## 🚀 Quick Start:
 
-## 📋 Requirements
+### 📋 Requirements
 
 - Docker & Docker Compose  
 - Python 3.9+ (for local development)  
@@ -142,16 +142,16 @@ This repository delivers an end-to-end data pipeline with:
 
 ---
 
-#### ⚙️ Setup & Usage
+### ⚙️ Setup & Usage
 
-### 1. Clone & Navigate
+#### 1. Clone & Navigate
 
 ```
 git clone https://github.com/CamilaJaviera91/modern-data-pipeline-gcp.git
 cd modern-data-pipeline-gcp
 ```
 
-### 2. Environment Setup
+#### 2. Environment Setup
 
 Copy `.env.example` to `.env` and supply:
 
@@ -168,7 +168,7 @@ BQ_PROJECT_ID=...
 BQ_DATASET=...
 ```
 
-### 3. Install Locally (optional)
+#### 3. Install Locally (optional)
 
 ```
 python3 -m venv .venv
@@ -177,13 +177,13 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
 
-### 4. Start Services (Postgres + Airflow)
+#### 4. Start Services (Postgres + Airflow)
 
 ```
 docker-compose up --build
 ```
 
-### 5. Initialize DBT
+#### 5. Initialize DBT
 
 ```
 cd transformations
