@@ -4,6 +4,8 @@
 ![Airflow](https://img.shields.io/badge/Airflow-2.x-blue)
 ![DBT](https://img.shields.io/badge/DBT-1.9.x-orange)
 ![GCP](https://img.shields.io/badge/GCP-ready-green)
+![Docker](https://img.shields.io/badge/Containerized-Docker-blue)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-blueviolet)
 
 ---
 
