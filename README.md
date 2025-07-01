@@ -184,6 +184,9 @@ pip install -r requirements-dev.txt
 #### 4. Start Services (Postgres + Airflow)
 
 ```
+sudo systemctl start docker 
+sudo systemctl status docker #verify if it's running
+
 docker-compose up --build
 ```
 
