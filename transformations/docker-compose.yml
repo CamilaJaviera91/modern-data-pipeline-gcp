@@ -23,7 +23,7 @@ services:
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
-      - ./dags:/opt/airflow/dags
+      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations/dag/:/opt/airflow/dags/
     ports:
       - "8080:8080"
     command: webserver
@@ -37,7 +37,7 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
     volumes:
-      - ./dags:/opt/airflow/dags
+      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations/dag/:/opt/airflow/dags/
     command: scheduler
     restart: always
 
@@ -50,7 +50,6 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
     volumes:
       - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations/dag/:/opt/airflow/dags/
-
     command: >
       bash -c "airflow db init && airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
     restart: "no"
