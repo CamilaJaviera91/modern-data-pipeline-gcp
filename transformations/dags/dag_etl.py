@@ -4,7 +4,6 @@ from datetime import datetime, timedelta
 import sys
 import os
 
-# Añadir path para importar tus scripts
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 from scripts.load_exchange_rates import run_exchange_rates_load as rates
@@ -54,5 +53,5 @@ with DAG(
         task_id='load_tables_to_bigquery',
         python_callable=bigquery,
     )
-    
+
     task_rates >> task_upload >> task_csv >> task_sheets >> task_bigquery
