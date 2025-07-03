@@ -18,7 +18,7 @@ services:
       - postgres
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
       AIRFLOW__CORE__FERNET_KEY: ''
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
@@ -35,7 +35,7 @@ services:
       - airflow-webserver
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
     volumes:
       - ./dags:/opt/airflow/dags
     command: scheduler
@@ -47,10 +47,11 @@ services:
       - postgres
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
     volumes:
       - ./dags:/opt/airflow/dags
-    command: bash -c "airflow db init && airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
+    command: >
+      bash -c "airflow db init && airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
     restart: "no"
 
 volumes:
