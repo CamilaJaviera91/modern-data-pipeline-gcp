@@ -23,7 +23,8 @@ services:
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
-      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations:/opt/airflow
+      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations/dags:/opt/airflow/dags
+      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations/logs:/opt/airflow/logs
     ports:
       - "8080:8080"
     command: webserver
