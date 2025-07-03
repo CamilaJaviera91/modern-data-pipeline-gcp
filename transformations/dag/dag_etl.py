@@ -54,6 +54,5 @@ with DAG(
         task_id='load_tables_to_bigquery',
         python_callable=bigquery,
     )
-
-    # Definición del orden de ejecución (secuencial)
+    
     task_rates >> task_upload >> task_csv >> task_sheets >> task_bigquery
