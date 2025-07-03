@@ -10,7 +10,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations/pgdata:/var/lib/postgresql/data
 
   airflow-webserver:
     image: apache/airflow:2.9.1
@@ -37,7 +37,7 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
     volumes:
-      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations/:/opt/airflow/
+      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations:/opt/airflow
     command: scheduler
     restart: always
 
@@ -49,7 +49,7 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
     volumes:
-      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations/dag/:/opt/airflow/dags/
+      - /home/camilajaviera/Documentos/github/modern-data-pipeline-gcp/transformations:/opt/airflow
     command: >
       bash -c "airflow db init && airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
     restart: "no"
