@@ -64,10 +64,8 @@ services:
       bash -c "
       echo 'Waiting for Postgres...' &&
       while ! pg_isready -h postgres -p 5432; do sleep 1; done &&
-      airflow db migrate &&
-      airflow users create --username admin --password admin \
-        --firstname Camila --lastname Muñoz --role Admin --email camila@example.com
-      "
+      airflow db upgrade &&
+      airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email admin@example.com"
     restart: "no"
 
 volumes:
