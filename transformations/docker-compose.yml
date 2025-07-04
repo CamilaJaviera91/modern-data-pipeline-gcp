@@ -57,8 +57,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.airflow-secure
-    image: custom-airflow:secure
-    container_name: airflow-init
     depends_on:
       - postgres
     environment:
@@ -66,9 +64,10 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/airflow
     volumes:
       - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs
+      - ./wait-for-postgres.sh:/wait-for-postgres.sh
+    entrypoint: ["/bin/bash", "/wait-for-postgres.sh", "postgres"]
     command: >
-      bash -c "airflow db init && airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
+      bash -c "airflow db migrate && airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
     restart: "no"
 
 volumes:
