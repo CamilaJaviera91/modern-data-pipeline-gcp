@@ -1,30 +1,25 @@
-version: "3.8"
-
 services:
   postgres:
     image: postgres:15
-    container_name: postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin123
-      POSTGRES_DB: airflow
+      POSTGRES_DB: postgres
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-    restart: unless-stopped
+      - ./pgdata:/var/lib/postgresql/data
+
 
   airflow-webserver:
     build:
       context: .
       dockerfile: Dockerfile.airflow-secure
-    image: custom-airflow:secure
-    container_name: airflow-webserver
     depends_on:
       - postgres
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
       AIRFLOW__CORE__FERNET_KEY: ''
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
@@ -33,24 +28,22 @@ services:
       - ./logs:/opt/airflow/logs
     ports:
       - "8080:8080"
-    command: webserver
+    command: ["airflow", "webserver"]
     restart: always
 
   airflow-scheduler:
     build:
       context: .
       dockerfile: Dockerfile.airflow-secure
-    image: custom-airflow:secure
-    container_name: airflow-scheduler
     depends_on:
-      - airflow-webserver
+      - postgres
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
-    command: scheduler
+    command: ["airflow", "scheduler"]
     restart: always
 
   airflow-init:
@@ -61,13 +54,18 @@ services:
       - postgres
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
     volumes:
       - ./dags:/opt/airflow/dags
-      - ./wait-for-postgres.sh:/wait-for-postgres.sh
-    entrypoint: ["/bin/bash", "/wait-for-postgres.sh", "postgres"]
-    command: >
-      bash -c "airflow db migrate && airflow users create --username admin --password admin --firstname Camila --lastname Muñoz --role Admin --email camila@example.com"
+      - ./logs:/opt/airflow/logs
+    entrypoint: >
+      bash -c "
+      echo 'Waiting for Postgres...' &&
+      while ! pg_isready -h postgres -p 5432; do sleep 1; done &&
+      airflow db migrate &&
+      airflow users create --username admin --password admin \
+        --firstname Camila --lastname Muñoz --role Admin --email camila@example.com
+      "
     restart: "no"
 
 volumes:
