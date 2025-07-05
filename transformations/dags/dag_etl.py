@@ -2,9 +2,8 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 import sys
-import os
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+sys.path.append('/opt/airflow/scripts')
 
 from scripts.load_exchange_rates import run_exchange_rates_load as rates
 from scripts.upload_tables import run_dbt_mock_models as upload
