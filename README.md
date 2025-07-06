@@ -31,6 +31,7 @@
     - [1. Stop and clean everything](#1-stop-and-clean-everything)
     - [2. Initialize Airflow](#2-initialize-airflow)
     - [3. Build airflow and postgres](#3-build-airflow-and-postgres)
+    - [4. Start Airflow in the background](#4-start-airflow-in-the-background)
 - [🧪 Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🚀 CI/CD](#-cicd)
@@ -226,9 +227,9 @@ This guide shows the basic commands to start and manage Airflow using Docker Com
 docker compose down -v --remove-orphans
 ```
 
-    - Stops and removes containers, networks, and volumes.
+- Stops and removes containers, networks, and volumes.
 
-    - Use this to reset your environment completely.
+- Use this to reset your environment completely.
  
 #### 2. Initialize Airflow
 
@@ -236,15 +237,25 @@ docker compose down -v --remove-orphans
 docker compose run airflow-init
 ```
 
-    - Runs a one-time container to set up Airflow’s database and config.
+- Runs a one-time container to set up Airflow’s database and config.
 
-    - Run this once before starting Airflow.
+- Run this once before starting Airflow.
 
-#### 3. Build airflow and postgres
+#### 3. Build Airflow and Postgres
 
 ```
 docker compose build  
 ```
+
+#### 4. Start Airflow and Postgres in the background
+
+```
+docker compose up -d
+```
+
+- Starts all services defined in `docker-compose.yml`.
+
+- Runs containers in detached mode (background).
 
 ---
 
