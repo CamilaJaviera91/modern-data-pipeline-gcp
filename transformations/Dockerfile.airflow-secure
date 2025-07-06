@@ -9,25 +9,19 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Airflow and dependencies
-RUN pip install --no-cache-dir \
-    apache-airflow==2.10.0 \
-    psycopg2-binary
+# Airflow and Python dependencies
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Create airflow user and group (UID 50000 para evitar conflictos)
+# Create airflow user and group
 RUN groupadd -g 50000 airflow && \
     useradd -u 50000 -g airflow -m airflow
 
-# Set working directory and permissions
+# Prepare folders
 WORKDIR /opt/airflow
 RUN mkdir -p logs && chown -R airflow:airflow /opt/airflow
 
 USER airflow
 
-# Set environment variable so Airflow uses this folder for logs
+# Airflow log level
 ENV AIRFLOW__CORE__LOGGING_LEVEL=INFO
-
-# Entrypoint y comando se configuran en docker-compose o al correr container
-
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
