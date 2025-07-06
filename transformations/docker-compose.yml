@@ -20,11 +20,11 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
-      AIRFLOW__CORE__FERNET_KEY: ''
-      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
-      - ./transformations:/opt/airflow
+      - .:/opt/airflow
     ports:
       - "8080:8080"
     command: ["airflow", "webserver"]
@@ -39,9 +39,11 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
-      - ./transformations:/opt/airflow
+      - .:/opt/airflow
     command: ["airflow", "scheduler"]
     restart: always
 
@@ -54,9 +56,12 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin123@postgres/postgres
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
-      - ./transformations:/opt/airflow
+      - .:/opt/airflow
+
     entrypoint: >
       bash -c "
       echo 'Waiting for Postgres...' &&
