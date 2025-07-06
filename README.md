@@ -207,6 +207,10 @@ Mock mode only:
 ./run.sh run --select enrich_exchange_rates
 ```
 
+### 🐳 Using Docker Compose with Airflow
+
+This guide shows the basic commands to start and manage Airflow using Docker Compose.
+
 ---
 
 ## 🧪 Testing:
