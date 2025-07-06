@@ -1,4 +1,5 @@
 dbt-bigquery==1.7.9
+dbt-core==1.7.9
 dbt-postgres==1.7.9
 psycopg2-binary>=2.9
 python-dotenv==1.1.0
