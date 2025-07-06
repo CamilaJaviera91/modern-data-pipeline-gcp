@@ -26,6 +26,7 @@
         - [4. Start Services (Postgres + Airflow)](#4-start-services-postgres--airflow)
         - [5. Initialize DBT](#5-initialize-dbt)
         - [6. Run Pipeline](#6-run-pipeline)
+    - [🐳 Using Docker Compose with Airflow](#-using-docker-compose-with-airflow)
 - [🧪 Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🚀 CI/CD](#-cicd)
