@@ -28,3 +28,6 @@ USER airflow
 ENV AIRFLOW__CORE__LOGGING_LEVEL=INFO
 
 # Entrypoint y comando se configuran en docker-compose o al correr container
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
