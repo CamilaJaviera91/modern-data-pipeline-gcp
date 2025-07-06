@@ -27,6 +27,10 @@
         - [5. Initialize DBT](#5-initialize-dbt)
         - [6. Run Pipeline](#6-run-pipeline)
 - [🐳 Using Docker Compose with Airflow](#-using-docker-compose-with-airflow)
+- [💻 Commands](#-commands)
+    - [1. Stop and clean everything](#1-stop-and-clean-everything)
+    - [2. Initialize Airflow](#2-initialize-airflow)
+    - [3. Build airflow and postgres](#3-build-airflow-and-postgres)
 - [🧪 Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🚀 CI/CD](#-cicd)
@@ -214,7 +218,7 @@ Mock mode only:
 
 This guide shows the basic commands to start and manage Airflow using Docker Compose.
 
-### Commands
+### 💻 Commands
 
 #### 1. Stop and clean everything
 
@@ -226,7 +230,7 @@ docker compose down -v --remove-orphans
 
     - Use this to reset your environment completely.
  
- #### Initialize Airflow
+#### 2. Initialize Airflow
 
 ```
 docker compose run airflow-init
@@ -235,6 +239,12 @@ docker compose run airflow-init
     - Runs a one-time container to set up Airflow’s database and config.
 
     - Run this once before starting Airflow.
+
+#### 3. Build airflow and postgres
+
+```
+docker compose build  
+```
 
 ---
 
