@@ -222,6 +222,20 @@ This guide shows the basic commands to start and manage Airflow using Docker Com
 docker compose down -v --remove-orphans
 ```
 
+    - Stops and removes containers, networks, and volumes.
+
+    - Use this to reset your environment completely.
+ 
+ #### Initialize Airflow
+
+```
+docker compose run airflow-init
+```
+
+    - Runs a one-time container to set up Airflow’s database and config.
+
+    - Run this once before starting Airflow.
+
 ---
 
 ## 🧪 Testing:
