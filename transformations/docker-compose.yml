@@ -23,6 +23,7 @@ services:
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
       AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      DBT_SCHEMA: mock_schema
     volumes:
       - .:/opt/airflow
     ports:
@@ -42,6 +43,7 @@ services:
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
       AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      DBT_SCHEMA: mock_schema
     volumes:
       - .:/opt/airflow
     command: ["airflow", "scheduler"]
