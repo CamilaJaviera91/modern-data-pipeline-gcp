@@ -13,15 +13,23 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Create airflow user and group
+# Create airflow user and group (UID/GID = 50000)
 RUN groupadd -g 50000 airflow && \
     useradd -u 50000 -g airflow -m airflow
 
-# Prepare folders
+# Prepare Airflow working directory and logs
 WORKDIR /opt/airflow
-RUN mkdir -p logs && chown -R airflow:airflow /opt/airflow
+RUN mkdir -p /opt/airflow/logs && \
+    chown -R airflow:airflow /opt/airflow
 
+# Copy DBT profile to expected location
+RUN mkdir -p /home/airflow/.dbt
+COPY .dbt/profiles.yml /home/airflow/.dbt/profiles.yml
+RUN chown -R airflow:airflow /home/airflow/.dbt
+RUN chown -R airflow:airflow /opt/airflow/logs
+
+# Switch to airflow user
 USER airflow
 
-# Airflow log level
+# Airflow log level (optional)
 ENV AIRFLOW__CORE__LOGGING_LEVEL=INFO
