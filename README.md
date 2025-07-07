@@ -257,6 +257,27 @@ docker compose up -d
 
 - Runs containers in detached mode (background).
 
+### 🔄 Typical workflow
+
+Run these commands in order to start fresh:
+
+```
+docker compose down -v --remove-orphans
+docker compose run airflow-init #just once
+docker compose build
+docker compose up -d
+```
+
+#### Tips
+
+- Make sure Docker and Docker Compose are installed.
+
+- To see logs, use:
+
+```
+docker compose logs -f
+```
+
 ---
 
 ## 🧪 Testing:
