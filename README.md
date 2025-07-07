@@ -27,11 +27,13 @@
         - [5. Initialize DBT](#5-initialize-dbt)
         - [6. Run Pipeline](#6-run-pipeline)
 - [🐳 Using Docker Compose with Airflow](#-using-docker-compose-with-airflow)
-- [💻 Commands](#-commands)
-    - [1. Stop and clean everything](#1-stop-and-clean-everything)
-    - [2. Initialize Airflow](#2-initialize-airflow)
-    - [3. Build airflow and postgres](#3-build-airflow-and-postgres)
-    - [4. Start Airflow in the background](#4-start-airflow-in-the-background)
+    - [💻 Commands](#-commands)
+        - [1. Stop and clean everything](#1-stop-and-clean-everything)
+        - [2. Initialize Airflow](#2-initialize-airflow)
+        - [3. Build airflow and postgres](#3-build-airflow-and-postgres)
+        - [4. Start Airflow in the background](#4-start-airflow-in-the-background)
+    - [ 🔄 Typical workflow](#-typical-workflow)
+        -[💡 Tips](#-tips)    
 - [🧪 Testing](#-testing)
 - [📡 Monitoring & Logging](#-monitoring--logging)
 - [🚀 CI/CD](#-cicd)
@@ -268,7 +270,7 @@ docker compose build
 docker compose up -d
 ```
 
-#### Tips
+#### 💡 Tips
 
 - Make sure Docker and Docker Compose are installed.
 
