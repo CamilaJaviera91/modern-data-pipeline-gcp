@@ -1,6 +1,8 @@
-dbt-bigquery==1.7.9
-dbt-core==1.7.9
-dbt-postgres==1.7.9
+dbt-bigquery
+dbt-core
+dbt-postgres
+protobuf
+
 psycopg2-binary>=2.9
 python-dotenv==1.1.0
 faker==24.9.0
