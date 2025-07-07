@@ -23,9 +23,17 @@ services:
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
       AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      DBT_HOST: postgres
+      DBT_USER: postgres
+      DBT_PASSWORD: admin123
+      DBT_PORT: 5432
       DBT_SCHEMA: mock_schema
     volumes:
       - .:/opt/airflow
+      - ./dbt:/opt/airflow/dbt
+      - ./transformations:/opt/airflow/transformations
+      - ./logs:/opt/airflow/logs
+      - ./dbt/.dbt:/home/airflow/.dbt 
     ports:
       - "8080:8080"
     command: ["airflow", "webserver"]
@@ -43,9 +51,17 @@ services:
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
       AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      DBT_HOST: postgres
+      DBT_USER: postgres
+      DBT_PASSWORD: admin123
+      DBT_PORT: 5432
       DBT_SCHEMA: mock_schema
     volumes:
       - .:/opt/airflow
+      - ./dbt:/opt/airflow/dbt
+      - ./transformations:/opt/airflow/transformations
+      - ./logs:/opt/airflow/logs
+      - ./dbt/.dbt:/home/airflow/.dbt 
     command: ["airflow", "scheduler"]
     restart: always
 
@@ -61,8 +77,17 @@ services:
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
       AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      DBT_HOST: postgres
+      DBT_USER: postgres
+      DBT_PASSWORD: admin123
+      DBT_PORT: 5432
+      DBT_SCHEMA: mock_schema
     volumes:
       - .:/opt/airflow
+      - ./dbt:/opt/airflow/dbt
+      - ./transformations:/opt/airflow/transformations
+      - ./logs:/opt/airflow/logs
+      - ./dbt/.dbt:/home/airflow/.dbt 
 
     entrypoint: >
       bash -c "
