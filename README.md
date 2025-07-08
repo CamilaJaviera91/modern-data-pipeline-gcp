@@ -126,7 +126,9 @@ This repository delivers an end-to-end data pipeline with:
 │   ├── dbt_project.yml                 # DBT project config
 │   ├── README.md
 │   ├── requirement-dev.txt             # Python dependencies
-│   └── requirements.txt                # Python dependencies
+│   ├── requirements.txt                # Python dependencies
+│   ├── run_pipeline.py
+│   └── wait-for-postgres.sh
 ├── .gitignore
 ├── LICENSE
 └── README.md                           # Project documentation
