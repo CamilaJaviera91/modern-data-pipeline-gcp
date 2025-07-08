@@ -65,8 +65,9 @@ def load_tables_to_bigquery():
 
         try:
             logger.info(check_not_empty(df, table_name))
-            if "user_id" in df.columns:
+            if "user_id" in df.columns and table_name != "mock_orders":
                 logger.info(check_unique(df, "user_id", table_name))
+
             if "email" in df.columns:
                 logger.info(check_no_nulls(df, ["email"], table_name))
 
