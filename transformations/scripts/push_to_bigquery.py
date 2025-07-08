@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from pandas_gbq import to_gbq
 import logging
 import warnings
+from google.oauth2 import service_account
 
 # Add root path to allow relative imports (for utils)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -44,6 +45,8 @@ def load_tables_to_bigquery():
     schema = os.getenv("DBT_SCHEMA")
     project_id = os.getenv("BQ_PROJECT_ID")
     dataset = os.getenv("BQ_DATASET")
+    credentials_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "/opt/airflow/credentials/auth.json")
+    credentials = service_account.Credentials.from_service_account_file(credentials_path)
 
     conn = get_postgres_connection()
 
@@ -68,7 +71,11 @@ def load_tables_to_bigquery():
                 logger.info(check_no_nulls(df, ["email"], table_name))
 
             logger.info(f"⬆️ Uploading {table_name} to BigQuery...")
-            to_gbq(df, destination_table=f"{dataset}.{table_name}", project_id=project_id, if_exists="replace")
+            to_gbq(df, 
+                   destination_table=f"{dataset}.{table_name}",
+                   project_id=project_id,
+                   if_exists="replace",
+                   credentials=credentials)
             logger.info(f"✅ {table_name} uploaded successfully!")
 
         except Exception as e:
