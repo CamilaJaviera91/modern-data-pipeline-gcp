@@ -88,6 +88,8 @@ This repository delivers an end-to-end data pipeline with:
 │   │   ├── users.yml
 │   │   └── profiles.yml                # DBT profiles (often symlinked or referenced)
 │   ├── analyses
+│   ├── credentials
+│   │   └── auth.json
 │   ├── data                            # CSV exports
 │   │   ├── mock_order_items.csv
 │   │   ├── mock_orders.csv
