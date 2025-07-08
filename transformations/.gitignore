@@ -6,3 +6,4 @@ pgdata/
 old_logs/
 credentials/
 gcloud/
+transformations/
