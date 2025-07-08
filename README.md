@@ -126,8 +126,7 @@ This repository delivers an end-to-end data pipeline with:
 │   ├── dbt_project.yml                 # DBT project config
 │   ├── README.md
 │   ├── requirement-dev.txt             # Python dependencies
-│   ├── requirements.txt                # Python dependencies
-│   └── run.sh
+│   └── requirements.txt                # Python dependencies
 ├── .gitignore
 ├── LICENSE
 └── README.md                           # Project documentation
