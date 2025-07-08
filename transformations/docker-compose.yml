@@ -33,6 +33,7 @@ services:
       - ./dbt:/opt/airflow/dbt
       - ./transformations:/opt/airflow/transformations
       - ./logs:/opt/airflow/logs
+      - ./target:/opt/airflow/target
       - ./dbt/.dbt:/home/airflow/.dbt 
     ports:
       - "8080:8080"
@@ -61,6 +62,7 @@ services:
       - ./dbt:/opt/airflow/dbt
       - ./transformations:/opt/airflow/transformations
       - ./logs:/opt/airflow/logs
+      - ./target:/opt/airflow/target
       - ./dbt/.dbt:/home/airflow/.dbt 
     command: ["airflow", "scheduler"]
     restart: always
@@ -87,6 +89,7 @@ services:
       - ./dbt:/opt/airflow/dbt
       - ./transformations:/opt/airflow/transformations
       - ./logs:/opt/airflow/logs
+      - ./target:/opt/airflow/target
       - ./dbt/.dbt:/home/airflow/.dbt 
 
     entrypoint: >
