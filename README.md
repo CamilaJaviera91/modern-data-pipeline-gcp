@@ -111,9 +111,12 @@ This repository delivers an end-to-end data pipeline with:
 │   │       └── schema.yml
 │   ├── pgdata
 │   ├── scripts                         # Python scripts for pipeline steps
-│   │   ├── export_tables.py
+│   │   ├── export_csv.py
+│   │   ├── export_sheets.py
 │   │   ├── load_exchange_rates.py
-│   │   └── push_to_bigquery.py
+│   │   ├── push_to_bigquery.py
+│   │   ├── run.sh
+│   │   └── upload_tables.py
 │   ├── seeds
 │   ├── snapshots
 │   ├── target
