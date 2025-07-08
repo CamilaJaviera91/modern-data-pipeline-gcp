@@ -4,3 +4,5 @@ dbt_packages/
 logs/
 pgdata/
 old_logs/
+credentials/
+gcloud/
