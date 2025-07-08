@@ -109,6 +109,7 @@ This repository delivers an end-to-end data pipeline with:
 │   │       ├── mock_products.sql
 │   │       ├── mock_users.sql
 │   │       └── schema.yml
+│   ├── pgdata
 │   ├── scripts                         # Python scripts for pipeline steps
 │   │   ├── export_tables.py
 │   │   ├── load_exchange_rates.py
@@ -121,6 +122,7 @@ This repository delivers an end-to-end data pipeline with:
 |   |   └── quality_checks.py
 │   ├── .env
 │   ├── .gitignore
+│   ├── airflow
 │   ├── dbt_project.yml                 # DBT project config
 │   ├── README.md
 │   ├── requirement-dev.txt             # Python dependencies
