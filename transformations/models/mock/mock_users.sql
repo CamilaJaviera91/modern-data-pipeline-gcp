@@ -1,8 +1,6 @@
 {{ config(
     materialized='table',
-    post_hook=[
-        "ALTER TABLE {{ this }} ADD CONSTRAINT unique_user_id UNIQUE (user_id)"
-    ]
+    full_refresh=true
 ) }}
 
 -- models/mock/mock_users.sql
