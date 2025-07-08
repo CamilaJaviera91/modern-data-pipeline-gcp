@@ -95,6 +95,10 @@ This repository delivers an end-to-end data pipeline with:
 │   │   ├── mock_rates.csv
 │   │   └── mock_users.csv
 │   ├── logs
+│   │   ├── dag_id=modern_data_pipeline
+│   │   ├── dag_processor_manager
+│   │   ├── dbt.log
+│   │   └── push_to_bigquery
 │   ├── macros
 │   ├── models                          # DBT models
 │   │   └── mock
