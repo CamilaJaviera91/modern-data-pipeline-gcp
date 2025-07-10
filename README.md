@@ -77,7 +77,7 @@ This repository delivers an end-to-end data pipeline with:
 
 ---
 
-## 📁 `modern-data-pipeline-gcp` – Project Root:
+## 📁 `modern-data-pipeline-gcp` – Project Root
 
 ```
 .
