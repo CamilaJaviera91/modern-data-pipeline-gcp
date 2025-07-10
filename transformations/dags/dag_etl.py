@@ -11,6 +11,7 @@ from scripts.upload_tables import run_dbt_mock_models as upload
 from scripts.export_csv import export_tables_to_csv as csv
 from scripts.export_sheets import upload_csvs_to_google_sheets as sheets
 from scripts.push_to_bigquery import load_tables_to_bigquery as bigquery
+from scripts.report_generator import generate_reports as reports
 
 default_args = {
     'owner': 'camila',
@@ -54,4 +55,9 @@ with DAG(
         python_callable=bigquery,
     )
 
-    task_rates >> task_upload >> task_csv >> task_sheets >> task_bigquery
+    task_report = PythonOperator(
+        task_id='generate_reports',
+        python_callable=reports
+    )
+
+    task_rates >> task_upload >> task_csv >> task_sheets >> task_bigquery >> task_report
