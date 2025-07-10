@@ -139,7 +139,7 @@ This repository delivers an end-to-end data pipeline with:
 
 ---
 
-## 🛠️ Tech Stack:
+## 🛠️ Tech Stack
 
 | Layer            | Technologies                                  |
 |------------------|-----------------------------------------------|
