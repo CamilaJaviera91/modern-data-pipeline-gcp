@@ -294,7 +294,7 @@ docker compose logs -f
 
 ---
 
-## 🧪 Testing:
+## 🧪 Testing
 
 - **DBT tests** for schema, uniqueness, and relationships
 - **Airflow DAG validation**: `airflow dags list`, `airflow dags test`
