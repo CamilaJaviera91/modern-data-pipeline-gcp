@@ -22,14 +22,20 @@ def generate_reports():
 
     reports = {
         "order_by_status": """
-            select 
-                extract(year from mo.order_date) as year,
-                extract(month from mo.order_date) as month,
+            SELECT 
+                EXTRACT(YEAR FROM mo.order_date) AS year,
+                EXTRACT(MONTH FROM mo.order_date) AS month,
                 status, 
-                count(*) as orders
-            from mock_schema.mock_orders mo 
-            group by mo.status, extract(year from mo.order_date), extract(month from mo.order_date)
-            order by extract(month from mo.order_date), extract(year from mo.order_date), orders DESC;
+                COUNT(*) AS orders
+            FROM mock_schema.mock_orders mo 
+            GROUP BY 
+                mo.status, 
+                EXTRACT(YEAR FROM mo.order_date), 
+                EXTRACT(MONTH FROM mo.order_date)
+            ORDER BY 
+                EXTRACT(YEAR FROM mo.order_date), 
+                EXTRACT(MONTH FROM mo.order_date), 
+                orders DESC;
         """
     }
 
