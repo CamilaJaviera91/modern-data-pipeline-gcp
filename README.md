@@ -358,9 +358,7 @@ Thank you for your interest in contributing to this project!
 
 ---
 
-## 🧰 Resources:
-
-### 🧱 DBT:
+## 🧰 Resources
 
 - [DBT Docs](https://docs.getdbt.com/docs/introduction)
 - [DBT QA](https://discourse.getdbt.com/)
@@ -370,7 +368,7 @@ Thank you for your interest in contributing to this project!
 
 ---
 
-## 👩‍💻 Author:
+## 👩‍💻 Author
 
 **Camila Javiera Muñoz Navarro**  
 Data Engineer & Analyst | BigQuery | Airflow | Python | GCP  
