@@ -154,7 +154,7 @@ This repository delivers an end-to-end data pipeline with:
 
 ---
 
-## 🚀 Quick Start:
+## 🚀 Quick Start
 
 ### 📋 Requirements
 
