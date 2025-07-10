@@ -329,7 +329,7 @@ dbt test --select mock
 
 ---
 
-## 🗺️ Roadmap:
+## 🗺️ Roadmap
 
 - ✅ Initialize core modular pipeline  
 - 🧪 Add unit tests for Python & DBT logic  
