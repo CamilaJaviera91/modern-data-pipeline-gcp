@@ -10,7 +10,7 @@ load_dotenv()
 
 def get_psycopg2_connection():
     return psycopg2.connect(
-        host=os.getenv("DBT_HOST_TEST"),
+        host=os.getenv("DBT_HOST"),
         dbname=os.getenv("DBT_DBNAME"),
         user=os.getenv("DBT_USER"),
         password=os.getenv("DBT_PASSWORD"),
