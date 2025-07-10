@@ -9,7 +9,7 @@
 
 ---
 
-## 📚 Table of Contents:
+## 📚 Table of Contents
 
 - [🔍 Description](#-description)
 - [🚀 Project Overview](#-overview)
