@@ -356,15 +356,6 @@ Thank you for your interest in contributing to this project!
    `git push origin feature/your-feature-name`
 6. Submit a **pull request** to the `main` branch.
 
-#### 🧪 Testing:
-
-Please run tests locally before submitting your PR:
-
-```
-pytest scripts/
-dbt test
-```
-
 ---
 
 ## 🧰 Resources:
