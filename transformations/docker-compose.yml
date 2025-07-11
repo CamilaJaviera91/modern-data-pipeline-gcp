@@ -35,6 +35,7 @@ services:
       - ./credentials:/home/airflow/gcloud
       - ./logs:/opt/airflow/logs
       - ./target:/opt/airflow/target
+      - ./reports:/opt/airflow/reports
       - ./data:/opt/airflow/data
       - ./dbt/.dbt:/home/airflow/.dbt 
     ports:
@@ -66,6 +67,7 @@ services:
       - ./credentials:/home/airflow/gcloud
       - ./logs:/opt/airflow/logs
       - ./target:/opt/airflow/target
+      - ./reports:/opt/airflow/reports
       - ./data:/opt/airflow/data
       - ./dbt/.dbt:/home/airflow/.dbt 
     command: ["airflow", "scheduler"]
@@ -95,6 +97,7 @@ services:
       - ./credentials:/home/airflow/gcloud
       - ./logs:/opt/airflow/logs
       - ./target:/opt/airflow/target
+      - ./reports:/opt/airflow/reports
       - ./data:/opt/airflow/data
       - ./dbt/.dbt:/home/airflow/.dbt 
 
