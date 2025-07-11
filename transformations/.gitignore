@@ -11,4 +11,4 @@ transformations/
 macros/
 seeds/
 snapshots/
-test/
+tests/
