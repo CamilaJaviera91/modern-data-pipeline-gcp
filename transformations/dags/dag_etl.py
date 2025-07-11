@@ -8,7 +8,6 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 from scripts.load_exchange_rates import run_exchange_rates_load as rates
 from scripts.upload_tables import run_dbt_mock_models as upload
-from scripts.export_csv import export_tables_to_csv as csv
 from scripts.export_sheets import upload_csvs_to_google_sheets as sheets
 from scripts.push_to_bigquery import load_tables_to_bigquery as bigquery
 
@@ -39,11 +38,6 @@ with DAG(
         python_callable=upload,
     )
 
-    task_csv = PythonOperator(
-        task_id='export_tables_to_csv',
-        python_callable=csv,
-    )
-
     task_sheets = PythonOperator(
         task_id='upload_csvs_to_google_sheets',
         python_callable=sheets,
@@ -54,4 +48,4 @@ with DAG(
         python_callable=bigquery,
     )
 
-    task_rates >> task_upload >> task_csv >> task_sheets >> task_bigquery
+    task_rates >> task_upload >> task_sheets >> task_bigquery
