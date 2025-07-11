@@ -6,9 +6,9 @@ pgdata/
 old_logs/
 credentials/
 gcloud/
-transformations/
 .dbt/
 macros/
 seeds/
 snapshots/
 tests/
+transformations/
