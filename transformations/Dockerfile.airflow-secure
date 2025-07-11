@@ -24,6 +24,7 @@ RUN mkdir -p /opt/airflow/logs && \
 
 RUN mkdir -p /opt/airflow/target
 RUN mkdir -p /opt/airflow/data
+RUN mkdir -p /opt/airflow/reports
 
 # Copy DBT profile to expected location
 RUN mkdir -p /home/airflow/.dbt
@@ -32,6 +33,7 @@ RUN chown -R airflow:airflow /home/airflow/.dbt
 RUN chown -R airflow:airflow /opt/airflow/logs
 RUN chown -R airflow:airflow /opt/airflow/target
 RUN chown -R airflow:airflow /opt/airflow/data
+RUN chown -R airflow:airflow /opt/airflow/reports
 
 # Switch to airflow user
 USER airflow
