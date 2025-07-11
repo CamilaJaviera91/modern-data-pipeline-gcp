@@ -8,6 +8,7 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Import the function
+from scripts.export_csv import export_tables_to_csv as csv
 from scripts.report_generator import generate_reports as reports
 
 # Define DAG
@@ -16,6 +17,11 @@ default_args = {
     "retries": 1,
     "retry_delay": timedelta(minutes=5),
 }
+
+task_csv = PythonOperator(
+        task_id='export_tables_to_csv',
+        python_callable=csv,
+    )
 
 with DAG(
     dag_id="generate_reports_dag",
@@ -32,4 +38,4 @@ with DAG(
         python_callable=reports
     )
 
-    task_report
+    task_csv >> task_report
