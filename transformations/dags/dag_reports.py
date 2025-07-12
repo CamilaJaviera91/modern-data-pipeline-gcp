@@ -18,11 +18,6 @@ default_args = {
     "retry_delay": timedelta(minutes=5),
 }
 
-task_csv = PythonOperator(
-        task_id='export_tables_to_csv',
-        python_callable=csv,
-    )
-
 with DAG(
     dag_id="generate_reports_dag",
     default_args=default_args,
@@ -32,6 +27,11 @@ with DAG(
     catchup=False,
     tags=["reporting", "postgres"],
 ) as dag:
+
+    task_csv = PythonOperator(
+        task_id='export_tables_to_csv',
+        python_callable=csv,
+    )
 
     task_report = PythonOperator(
         task_id="generate_reports",
