@@ -4,13 +4,15 @@ from datetime import datetime, timedelta
 import sys
 import os
 
+# Add project root to sys.path to allow imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from scripts.load_exchange_rates import run_exchange_rates_load as rates
+# Import the function
 from scripts.upload_tables import run_dbt_mock_models as upload
 from scripts.export_sheets import upload_csvs_to_google_sheets as sheets
 from scripts.push_to_bigquery import load_tables_to_bigquery as bigquery
 
+# Define DAG
 default_args = {
     'owner': 'camila',
     'depends_on_past': False,
@@ -20,18 +22,13 @@ default_args = {
 }
 
 with DAG(
-    'modern_data_pipeline',
+    'dag_etl',
     default_args=default_args,
     schedule_interval='0 * * * *',
     catchup=False,
     max_active_runs=1,
-    tags=['dbt', 'gcp', 'pipeline']
+    tags=['dbt', 'gcp', 'pipeline', 'postgres']
 ) as dag:
-
-    task_rates = PythonOperator(
-        task_id='load_exchange_rates',
-        python_callable=rates,
-    )
 
     task_upload = PythonOperator(
         task_id='run_dbt_mock_models',
@@ -48,4 +45,4 @@ with DAG(
         python_callable=bigquery,
     )
 
-    task_rates >> task_upload >> task_sheets >> task_bigquery
+    task_upload >> task_sheets >> task_bigquery
