@@ -26,7 +26,7 @@ services:
       DBT_HOST: ${DBT_HOST}
       DBT_USER: ${DBT_USER}
       DBT_PASSWORD: ${DBT_PASSWORD}
-      DBT_PORT: 5432
+      DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
     volumes:
@@ -60,7 +60,7 @@ services:
       DBT_HOST: ${DBT_HOST}
       DBT_USER: ${DBT_USER}
       DBT_PASSWORD: ${DBT_PASSWORD}
-      DBT_PORT: 5432
+      DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
     volumes:
@@ -92,7 +92,7 @@ services:
       DBT_HOST: ${DBT_HOST}
       DBT_USER: ${DBT_USER}
       DBT_PASSWORD: ${DBT_PASSWORD}
-      DBT_PORT: 5432
+      DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
     volumes:
