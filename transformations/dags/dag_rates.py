@@ -17,7 +17,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id='1. dag_rates',
+    dag_id='1_dag_rates',
     description='Add rates',
     default_args=default_args,
     schedule_interval='@daily',

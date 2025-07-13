@@ -22,7 +22,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id='2. dag_etl',
+    dag_id='2_dag_etl',
     default_args=default_args,
     schedule_interval='0 * * * *',
     catchup=False,
