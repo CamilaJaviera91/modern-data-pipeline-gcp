@@ -279,7 +279,7 @@ Run these commands in order to start fresh:
 docker compose down -v --remove-orphans
 docker compose run airflow-init #just once
 docker compose build
-docker compose up -d
+docker compose up -d --remove-orphans
 ```
 
 #### 💡 Tips
