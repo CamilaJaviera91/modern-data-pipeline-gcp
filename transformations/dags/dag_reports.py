@@ -19,7 +19,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id="generate_reports_dag",
+    dag_id="3. generate_reports_dag",
     default_args=default_args,
     description="Generate CSV reports from PostgreSQL tables",
     schedule_interval="@daily",
