@@ -57,6 +57,24 @@ def generate_reports():
                 mu.last_name, 
                 mu.status
             ORDER BY total DESC;
+        """,
+
+        "active_clients_without_sales": """
+            SELECT 
+                CONCAT(mu.first_name,' ',mu.last_name) AS name, 
+                mu.username,
+                mu.email,
+                DATE(mu.created_at) AS created,
+                mu.status
+            FROM mock_schema.mock_users mu
+            LEFT JOIN mock_schema.mock_orders mo ON mo.user_id = mu.user_id
+            WHERE 
+                mo.order_id IS NOT NULL
+            AND 
+                mu.status = 'active'
+            ORDER BY 
+                mu.first_name, 
+                mu.last_name asc;
         """
     }
 
