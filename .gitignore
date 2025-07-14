@@ -1,4 +1,17 @@
-# Byte-compiled / optimized / DLL files
+transformations/target/
+transformations/dbt_packages/
+transformations/logs/
+transformations/pgdata/
+transformations/credentials/
+transformations/gcloud/
+transformations/.dbt/
+transformations/macros/
+transformations/seeds/
+transformations/snapshots/
+transformations/tests/
+transformations/transformations/
+
+
 __pycache__/
 *.py[cod]
 *$py.class
