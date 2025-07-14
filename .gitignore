@@ -9,6 +9,7 @@ transformations/scripts/__pycache__/
 transformations/seeds/
 transformations/snapshots/
 transformations/target/
+transformations/tests/
 transformations/transformations/
 transformations/utils/__pycache__/
 transformations/.env
