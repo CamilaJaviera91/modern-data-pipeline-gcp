@@ -32,10 +32,26 @@ def export_tables_to_csv(schema: str = None):
     for (table_name,) in tables:
         print(f"📦 Exporting table `{table_name}`...")
         query = f"SELECT * FROM {schema}.{table_name}"
-        df = pd.read_sql(query, conn)
+        df_new = pd.read_sql(query, conn)
 
         csv_path = f"data/{table_name}.csv"
-        df.to_csv(csv_path, index=False)
+
+        # Check if file exists and compare contents
+        if os.path.exists(csv_path):
+            try:
+                df_existing = pd.read_csv(csv_path)
+
+                if df_existing.equals(df_new):
+                    print(f"⚠️ No changes in `{table_name}`. Skipping write.")
+                    continue
+                else:
+                    print(f"✏️ Changes detected in `{table_name}`. Updating CSV.")
+            except Exception as e:
+                print(f"⚠️ Error reading `{csv_path}`: {e}. Rewriting file.")
+        else:
+            print(f"🆕 File for `{table_name}` does not exist. Creating CSV.")
+
+        df_new.to_csv(csv_path, index=False)
         print(f"💾 Saved to {csv_path}")
 
     conn.close()
