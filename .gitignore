@@ -1,5 +1,5 @@
 .venv/
-transformations/.dbt/
+transformations/.dbt/*.yml
 transformations/analyses/
 transformations/credentials/
 transformations/logs/
