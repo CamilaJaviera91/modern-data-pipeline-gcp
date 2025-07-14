@@ -36,6 +36,27 @@ def generate_reports():
                 EXTRACT(YEAR FROM mo.order_date), 
                 EXTRACT(MONTH FROM mo.order_date), 
                 orders DESC;
+        """,
+
+        "sales_by_clients": """
+            SELECT 
+                CONCAT(mu.first_name,' ',mu.last_name) AS name, 
+                mu.status,
+                COUNT(mo.order_id) AS orders,
+                ROUND(SUM(mo.amount * er.rate)) AS total
+            FROM mock_schema.mock_users mu
+            JOIN mock_schema.mock_orders mo ON mo.user_id = mu.user_id
+            CROSS JOIN (
+            SELECT rate
+            FROM mock_schema.exchange_rates
+            WHERE currency = 'CLP'
+            LIMIT 1
+            ) er
+            GROUP BY 
+                mu.first_name, 
+                mu.last_name, 
+                mu.status
+            ORDER BY total DESC;
         """
     }
 
