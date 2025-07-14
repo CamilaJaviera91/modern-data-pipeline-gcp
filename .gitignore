@@ -3,7 +3,6 @@ transformations/dbt_packages/
 transformations/logs/
 transformations/pgdata/
 transformations/credentials/
-transformations/gcloud/
 transformations/.dbt/
 transformations/macros/
 transformations/seeds/
