@@ -82,26 +82,21 @@ This repository delivers an end-to-end data pipeline with:
 ```
 .
 ├── .venv                               # Virtual environment 
-├── logs
 ├── transformations                     # Data transformation logic
-│   ├── .dbt
-│   │   ├── users.yml
-│   │   └── profiles.yml                # DBT profiles (often symlinked or referenced)
-│   ├── analyses
-│   ├── credentials
-│   │   └── auth.json
+│   ├── dags
+│   │   ├── dag_etl.py
+│   │   ├── dag_rates.py
+│   │   └── dag_reports.py
 │   ├── data                            # CSV exports
 │   │   ├── mock_order_items.csv
 │   │   ├── mock_orders.csv
 │   │   ├── mock_products.csv
 │   │   ├── mock_rates.csv
 │   │   └── mock_users.csv
-│   ├── logs
-│   │   ├── dag_id=modern_data_pipeline
-│   │   ├── dag_processor_manager
-│   │   ├── dbt.log
-│   │   └── push_to_bigquery
-│   ├── macros
+│   ├── dbt
+│   │   └── .dbt
+│   │       ├── .user.yml
+│   │       └── profiles.yml
 │   ├── models                          # DBT models
 │   │   └── mock
 │   │       ├── mock_order_items.sql
@@ -109,7 +104,10 @@ This repository delivers an end-to-end data pipeline with:
 │   │       ├── mock_products.sql
 │   │       ├── mock_users.sql
 │   │       └── schema.yml
-│   ├── pgdata
+│   ├── reports
+│   │   ├── active_clients_without_sales.csv
+│   │   ├── order_by_status.csv
+│   │   └── sales_by_clients.csv
 │   ├── scripts                         # Python scripts for pipeline steps
 │   │   ├── export_csv.py
 │   │   ├── export_sheets.py
@@ -117,17 +115,10 @@ This repository delivers an end-to-end data pipeline with:
 │   │   ├── push_to_bigquery.py
 │   │   ├── run.sh
 │   │   └── upload_tables.py
-│   ├── seeds
-│   ├── snapshots
-│   ├── target
-│   ├── tests
 │   ├── utils                           # Custom utility functions
 |   |   └── quality_checks.py
-│   ├── .env
-│   ├── .gitignore
 │   ├── airflow
 │   ├── dbt_project.yml                 # DBT project config
-│   ├── README.md
 │   ├── requirement-dev.txt             # Python dependencies
 │   ├── requirements.txt                # Python dependencies
 │   ├── run_pipeline.py
