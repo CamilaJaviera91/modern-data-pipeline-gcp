@@ -34,7 +34,7 @@ def export_tables_to_csv(schema: str = None):
         query = f"SELECT * FROM {schema}.{table_name}"
         df_new = pd.read_sql(query, conn)
 
-        csv_path = f"data/{table_name}.csv"
+        csv_path = f"../data/{table_name}.csv"
 
         # Check if file exists and compare contents
         if os.path.exists(csv_path):
