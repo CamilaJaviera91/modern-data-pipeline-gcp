@@ -1,18 +1,16 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
+
 import sys
 import os
 
-# Add project root to sys.path to allow imports
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Import the function
 from scripts.upload_tables import run_dbt_mock_models as upload
 from scripts.export_sheets import upload_csvs_to_google_sheets as sheets
 from scripts.push_to_bigquery import load_tables_to_bigquery as bigquery
 
-# Define DAG
 default_args = {
     'owner': 'camila',
     'depends_on_past': False,
