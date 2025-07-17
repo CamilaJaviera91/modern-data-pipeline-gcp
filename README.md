@@ -51,7 +51,7 @@
 
 A production-grade, modular **ETL** workflow built with **Apache Airflow**, **DBT**, and **Google Cloud Platform** (GCP) services. 
 <br>
-Designed for orchestrated extraction, transformation, and loading, with integrated data quality, monitoring, and CI/CD best practices.
+Designed for orchestrated **extraction**, **transformation**, and **loading**, with integrated data quality, **monitoring**, and **CI/CD** best practices.
 
 ---
 
