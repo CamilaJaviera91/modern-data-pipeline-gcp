@@ -1,3 +1,4 @@
+
 services:
   postgres:
     image: postgres:15
@@ -7,8 +8,6 @@ services:
       POSTGRES_DB: ${DBT_DBNAME}
     ports:
       - "5432:5432"
-    volumes:
-      - ./pgdata:/var/lib/postgresql/data
 
   airflow-webserver:
     build:
@@ -21,7 +20,7 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
       AIRFLOW__CORE__DAGS_FOLDER: ${AIRFLOW__CORE__DAGS_FOLDER}
       AIRFLOW__LOGGING__BASE_LOG_FOLDER: ${AIRFLOW__LOGGING__BASE_LOG_FOLDER}
-      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__LOAD_EXAMPLES: ${AIRFLOW__CORE__LOAD_EXAMPLES}
       AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW__WEBSERVER__SECRET_KEY}
       DBT_HOST: ${DBT_HOST}
       DBT_USER: ${DBT_USER}
@@ -29,16 +28,10 @@ services:
       DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
+      PYTHONPATH: ${PYTHONPATH}
     volumes:
-      - .:/opt/airflow
-      - ./dbt:/opt/airflow/dbt
-      - ./transformations:/opt/airflow/transformations
-      - ./credentials:/home/airflow/gcloud
-      - ./logs:/opt/airflow/logs
-      - ./target:/opt/airflow/target
-      - ./reports:/opt/airflow/reports
-      - ./data:/opt/airflow/data
-      - ./dbt/.dbt:/home/airflow/.dbt
+      - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
     ports:
       - "8080:8080"
     command: ["airflow", "webserver"]
@@ -55,7 +48,7 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
       AIRFLOW__CORE__DAGS_FOLDER: ${AIRFLOW__CORE__DAGS_FOLDER}
       AIRFLOW__LOGGING__BASE_LOG_FOLDER: ${AIRFLOW__LOGGING__BASE_LOG_FOLDER}
-      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__LOAD_EXAMPLES: ${AIRFLOW__CORE__LOAD_EXAMPLES}
       AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW__WEBSERVER__SECRET_KEY}
       DBT_HOST: ${DBT_HOST}
       DBT_USER: ${DBT_USER}
@@ -63,16 +56,10 @@ services:
       DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
+      PYTHONPATH: ${PYTHONPATH}
     volumes:
-      - .:/opt/airflow
-      - ./dbt:/opt/airflow/dbt
-      - ./transformations:/opt/airflow/transformations
-      - ./credentials:/home/airflow/gcloud
-      - ./logs:/opt/airflow/logs
-      - ./target:/opt/airflow/target
-      - ./reports:/opt/airflow/reports
-      - ./data:/opt/airflow/data
-      - ./dbt/.dbt:/home/airflow/.dbt
+      - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
     command: ["airflow", "scheduler"]
     restart: always
 
@@ -87,7 +74,7 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
       AIRFLOW__CORE__DAGS_FOLDER: ${AIRFLOW__CORE__DAGS_FOLDER}
       AIRFLOW__LOGGING__BASE_LOG_FOLDER: ${AIRFLOW__LOGGING__BASE_LOG_FOLDER}
-      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__LOAD_EXAMPLES: ${AIRFLOW__CORE__LOAD_EXAMPLES}
       AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW__WEBSERVER__SECRET_KEY}
       DBT_HOST: ${DBT_HOST}
       DBT_USER: ${DBT_USER}
@@ -95,16 +82,10 @@ services:
       DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
+      PYTHONPATH: ${PYTHONPATH}
     volumes:
-      - .:/opt/airflow
-      - ./dbt:/opt/airflow/dbt
-      - ./transformations:/opt/airflow/transformations
-      - ./credentials:/home/airflow/gcloud
-      - ./logs:/opt/airflow/logs
-      - ./target:/opt/airflow/target
-      - ./reports:/opt/airflow/reports
-      - ./data:/opt/airflow/data
-      - ./dbt/.dbt:/home/airflow/.dbt
+      - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
     entrypoint: >
       bash -c "
       echo 'Waiting for Postgres...' &&
