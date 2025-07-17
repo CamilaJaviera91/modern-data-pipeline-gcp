@@ -78,11 +78,14 @@ This repository delivers an end-to-end data pipeline with:
 	- `load`
 	- `validate`
 	- `notify`  
-- Docker + Docker Compose for consistent local execution  
-- DBT for SQL-based modeling and schema tests  
-- Airflow DAG to sequence the pipeline steps  
-- Integration with GCP services: BigQuery, Sheets API, Secret Manager  
-- Robust logging and optional Stackdriver integration
+- **Docker + Docker Compose for consistent local execution**
+- **DBT for SQL-based modeling and schema tests**
+- **Airflow DAG to sequence the pipeline steps**
+- **Integration with GCP services:**
+	- BigQuery
+	- Sheets API
+	- Secret Manager  
+- **Robust logging and optional Stackdriver integration**
 
 ---
 
