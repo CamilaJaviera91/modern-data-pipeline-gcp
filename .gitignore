@@ -5,7 +5,7 @@ transformations/credentials/
 transformations/logs/
 transformations/macros/
 transformations/pgdata/
-transformations/scripts/__pycache__/
+transformations/dags/scripts/__pycache__/
 transformations/seeds/
 transformations/snapshots/
 transformations/target/
