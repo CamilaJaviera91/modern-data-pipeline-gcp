@@ -72,7 +72,12 @@ This repository delivers an end-to-end data pipeline with:
 
 #### ✅ Features
 
-- Modular structure: `extract`, `transform`, `load`, `validate`, `notify`  
+- **Modular structure**: 
+	- `extract`
+	- `transform`
+	- `load`
+	- `validate`
+	- `notify`  
 - Docker + Docker Compose for consistent local execution  
 - DBT for SQL-based modeling and schema tests  
 - Airflow DAG to sequence the pipeline steps  
