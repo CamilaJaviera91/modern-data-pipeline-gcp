@@ -28,10 +28,15 @@ services:
       DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
-      PYTHONPATH: ${PYTHONPATH}
     volumes:
       - ./dags:/opt/airflow/dags
-      - ./scripts:/opt/airflow/scripts
+      - ./scripts:/opt/airflow/scripts:Z
+      - ./data:/opt/airflow/data
+      - ./dbt:/opt/airflow/dbt
+      - ./models:/opt/airflow/models
+      - ./reports:/opt/airflow/reports
+      - ./utils:/opt/airflow/utils:Z
+      - ./dbt_project.yml:/opt/airflow/dbt_project.yml
     ports:
       - "8080:8080"
     command: ["airflow", "webserver"]
@@ -56,10 +61,15 @@ services:
       DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
-      PYTHONPATH: ${PYTHONPATH}
     volumes:
       - ./dags:/opt/airflow/dags
-      - ./scripts:/opt/airflow/scripts
+      - ./scripts:/opt/airflow/scripts:Z
+      - ./data:/opt/airflow/data
+      - ./dbt:/opt/airflow/dbt
+      - ./models:/opt/airflow/models
+      - ./reports:/opt/airflow/reports
+      - ./utils:/opt/airflow/utils:Z
+      - ./dbt_project.yml:/opt/airflow/dbt_project.yml
     command: ["airflow", "scheduler"]
     restart: always
 
@@ -82,10 +92,15 @@ services:
       DBT_PORT: ${DBT_PORT}
       DBT_SCHEMA: ${DBT_SCHEMA}
       EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
-      PYTHONPATH: ${PYTHONPATH}
     volumes:
       - ./dags:/opt/airflow/dags
-      - ./scripts:/opt/airflow/scripts
+      - ./scripts:/opt/airflow/scripts:Z
+      - ./data:/opt/airflow/data
+      - ./dbt:/opt/airflow/dbt
+      - ./models:/opt/airflow/models
+      - ./reports:/opt/airflow/reports
+      - ./utils:/opt/airflow/utils:Z
+      - ./dbt_project.yml:/opt/airflow/dbt_project.yml
     entrypoint: >
       bash -c "
       echo 'Waiting for Postgres...' &&
