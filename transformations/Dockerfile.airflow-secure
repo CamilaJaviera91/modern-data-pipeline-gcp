@@ -14,8 +14,8 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Create airflow user and group (UID/GID = 50000)
-RUN groupadd -g 50000 airflow && \
-    useradd -u 50000 -g airflow -m airflow
+RUN groupadd -g 1000 airflow && \
+    useradd -u 1000 -g airflow -m airflow
 
 # Prepare Airflow working directory and logs
 WORKDIR /opt/airflow
