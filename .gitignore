@@ -5,11 +5,12 @@ transformations/credentials/
 transformations/logs/
 transformations/macros/
 transformations/pgdata/
-transformations/dags/scripts/__pycache__/
+transformations/scripts/__pycache__/
 transformations/seeds/
 transformations/snapshots/
 transformations/target/
 transformations/tests/
+transformations/dags/__pycache__/
 transformations/transformations/
 transformations/utils/__pycache__/
 transformations/.env
