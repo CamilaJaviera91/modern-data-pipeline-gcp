@@ -1,4 +1,4 @@
-# 🌐 Modern Data Pipeline GCP
+# 🌐 Modern Data Pipeline GCP 
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Airflow](https://img.shields.io/badge/Airflow-2.x-blue)
